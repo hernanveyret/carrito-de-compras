@@ -9,7 +9,10 @@ const articulos = [
     [3,4077,35,44,'Shadow',4900,'4077.png','marron','4077marron'],
     [4,128,19,26,'Jaguar',1900,'rosa.png','rosa','128/1rosa'],
     [5,128,27,33,'Jaguar',1900,'jean.png','jean','128/2jean'],
-    [6,2010,35,40,'Cromic',2100,'2010.png','rosa','2010/2rosa']
+    [6,2010,35,40,'Cromic',2100,'2010.png','rosa','2010/2rosa'],
+    [7,2010,35,40,'Cromic',2100,'2010-negra.png','negra','2010/2negra'],
+    [8,1153,19,26,'Tridy',2500,'1153-negra.png','negra','1153negra'],
+    [9,1153,19,26,'Tridy',2500,'1153-blanca.png','blanca','1153blanca']
 ]
 /*
 const articulo = [
