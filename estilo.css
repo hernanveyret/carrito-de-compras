@@ -54,7 +54,8 @@ header {
     cursor:pointer;  
 }
 h1 {
-    font-size: 2.8em;
+    font-size: 20px;
+    transform:scaleY(2.9);
     color: white;
 }
 .contenedor {
@@ -121,6 +122,8 @@ footer {
     top: 200px;
 }
 */
+
+
 @media (max-width: 680px) {
     .contenedor {
         flex-direction: column;
