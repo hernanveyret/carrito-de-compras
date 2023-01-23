@@ -18,6 +18,8 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 5px 5px 0 0;
+    position: fixed;
+    top: 0;
 }
 .headerIzquerdo, .headerCentral, .headerDerecho {
     width: 33.5%;
@@ -35,6 +37,7 @@ header {
 
 }
 .iconoMenu {
+    cursor: pointer;
     margin-left: 20px;
     width: 7%; 
     display: none;   
@@ -45,9 +48,10 @@ header {
     align-items: center;
 
 }
-.bolsitaCompras {
+.iconoBolsita {
     margin-right: 20px;
-    width: 7%;    
+    width: 7%;  
+    cursor:pointer;  
 }
 h1 {
     font-size: 2.8em;
@@ -74,7 +78,7 @@ h1 {
     margin: 5px;
     background-color:azure;
 }
-span {
+.numberr, .color {
     display: none;
 }
 .cards img {
@@ -104,6 +108,19 @@ footer {
         justify-content: center;
         align-items: center;
 }
+/*
+.carritoContenedor {
+    width: 80%;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+}
+*/
 @media (max-width: 680px) {
     .contenedor {
         flex-direction: column;
@@ -112,9 +129,16 @@ footer {
         width: 80%;
     }
     h1 {
-        font-size: 1.4em;
+        font-size: 14px;
+        transform:scaleY(2.9);
+        
     }
     .iconoMenu {
-        display: inline-block;
+        display: block;
+        width: 1.5em;
     }
+    .iconoBolsita {
+        width: 1.5em;   
+    }
+    
 }
