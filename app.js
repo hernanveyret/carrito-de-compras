@@ -4,6 +4,7 @@ let objetoSelectId;
 let idArticulo;
 let artId;
 let miNumero;
+let contador = 0;
 const carrito = [];
 const producto = [];
 const articulos = [
@@ -125,12 +126,19 @@ contenedor.addEventListener('click', (e) => {
 });
 
 function mostrarCarrito(){
-
+  if ( producto.length === 0) { alert('El carrito esta vacio')
+  return;
+}
+ 
   document.getElementById('carritoContenedor').style.display="block";
+  
+  
     let htmlCarrito = ''
+            htmlCarrito = `<p>Tu compra</p>`
             htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
-            
+        
 for ( let m = 0; m < producto.length; m++) {
+  
             htmlCarrito += `<tr>`
             htmlCarrito += `<td>${producto[m].id}</td>`
             htmlCarrito += `<td>${producto[m].nArticulo}</td>`
@@ -145,8 +153,7 @@ for ( let m = 0; m < producto.length; m++) {
             
 }
            
-           htmlCarrito += `</table>`
-            
+            htmlCarrito += `</table>`            
             htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
             htmlCarrito += `<button onclick="vaciarCarrito()">VACIAR CARRITO</button>`
