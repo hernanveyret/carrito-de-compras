@@ -160,14 +160,6 @@ for ( let m = 0; m < producto.length; m++) {
             htmlCarrito += `</div>`
             carritoContenedor.innerHTML = htmlCarrito;
 
-  /*
-  let carro = '';
-  for ( let m = 0; m < producto.length; m++){
-    carritoContenedor.innerHTML ="";
-    carritoContenedor.innerHTML += `<div class="carrito">${producto[m].nArticulo}</div>`
-    console.log(producto[m])
-  }
-  */
 }
 
 function seguirComprando() {
