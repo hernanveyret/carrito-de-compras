@@ -125,14 +125,45 @@ contenedor.addEventListener('click', (e) => {
 });
 
 function mostrarCarrito(){
+
+  document.getElementById('carritoContenedor').style.display="block";
+    let htmlCarrito = ''
+            htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
+            
+for ( let m = 0; m < producto.length; m++) {
+            htmlCarrito += `<tr>`
+            htmlCarrito += `<td>${producto[m].id}</td>`
+            htmlCarrito += `<td>${producto[m].nArticulo}</td>`
+            htmlCarrito += `<td>${producto[m].marca}</td>`
+            htmlCarrito += `<td>${producto[m].numero}</td>`
+            htmlCarrito += `<td>${producto[m].color}</td>`
+            htmlCarrito += `<td>${producto[m].cantidad}</td>`
+            htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
+            htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
+            htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
+            htmlCarrito += `</tr>`
+            
+}
+           
+           htmlCarrito += `</table>`
+            
+            htmlCarrito += `<div class="btn-contenedor-carrito">`
+            htmlCarrito += `<button onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
+            htmlCarrito += `<button onclick="vaciarCarrito()">VACIAR CARRITO</button>`
+            htmlCarrito += `</div>`
+            carritoContenedor.innerHTML = htmlCarrito;
+
+  /*
   let carro = '';
   for ( let m = 0; m < producto.length; m++){
     carritoContenedor.innerHTML ="";
     carritoContenedor.innerHTML += `<div class="carrito">${producto[m].nArticulo}</div>`
     console.log(producto[m])
   }
+  */
 }
 
 function seguirComprando() {
-
+  document.getElementById('carritoContenedor').style.display="none"
+  
 }
