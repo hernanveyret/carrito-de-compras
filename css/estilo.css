@@ -115,7 +115,6 @@ footer {
     background-color: rgb(4, 161, 4);
     position: fixed;
     top: 50%;
-    
     border-radius: 5px;
     color: white;
     display: none;
@@ -129,7 +128,7 @@ footer {
 }
 
 
-@media (max-width: 680px) {
+@media (max-width: 576px) {
     .contenedor {
         flex-direction: column;
     }
@@ -138,15 +137,17 @@ footer {
     }
     h1 {
         font-size: 14px;
-        transform:scaleY(2.9);
-        
+        transform:scaleY(2.9);   
     }
-    .iconoMenu {
-        display: block;
-        width: 1.5em;
-    }
+  
     .iconoBolsita {
         width: 1.5em;   
     }
     
+}
+@media (max-width: 768px) {
+    .iconoMenu {
+        display: block;
+        width: 1.5em;
+    }
 }
