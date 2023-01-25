@@ -1,0 +1,40 @@
+.carrito-Contenedor {
+    width: auto;
+    height: auto;
+    background-color: rgb(235, 241, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+.btn-contenedor-carrito {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.btn-mas, .btn-menos {
+    background-color:aqua;
+    color: black;
+}
+.btn-borrar-producto {
+    background-color: red;
+    color: white;
+}
+.btn-contenedor-carrito button {
+    margin-right: 5px;
+}
+table {
+    text-align: center;
+    border: none;
+}
+td {
+    border: none;
+    padding: 5px;
+    margin-right: 40px;
+}
