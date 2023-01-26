@@ -136,20 +136,23 @@ function mostrarCarrito(){
 }
  
   document.getElementById('carritoContenedor').style.display="block";
+  
+  document.getElementById('carritoContenedor').style.borderRadius="5px";
     
     let htmlCarrito = ''
-            htmlCarrito = `<p>Tu compra</p>`
+            htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
             htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
         
 for (  m = 0; m < producto.length; m++) {
   
             htmlCarrito += `<tr>`
-            htmlCarrito += `<td>${producto[m].id}</td>`
+            htmlCarrito += `<td>${m+1}</td>`
             htmlCarrito += `<td>${producto[m].nArticulo}</td>`
             htmlCarrito += `<td>${producto[m].marca}</td>`
             htmlCarrito += `<td>${producto[m].numero}</td>`
             htmlCarrito += `<td>${producto[m].color}</td>`
             htmlCarrito += `<td>${producto[m].cantidad}</td>`
+            htmlCarrito += `<td>${producto[m].precio}</td>`
             htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
             htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
             htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
@@ -161,9 +164,9 @@ for (  m = 0; m < producto.length; m++) {
             htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
             htmlCarrito += `<button onclick="vaciarCarrito()">VACIAR CARRITO</button>`
+            htmlCarrito += `<button class="btn-pagar" onclick="pagar()">PAGAR</button>`
             htmlCarrito += `</div>`
-            carritoContenedor.innerHTML = htmlCarrito;
-            console.log(m)
+            carritoContenedor.innerHTML = htmlCarrito;           
 
 }
 
@@ -176,6 +179,6 @@ function checkCompra() {
  document.querySelector('.avisoDeCompra').style.display='inline-block';
 }
 
-function cerrarpestaña(){
+function cerrarPestaña(){
 document.querySelector('.avisoDeCompra').style.display="none";
 }
