@@ -35,7 +35,6 @@ header {
     display: flex;
     justify-content:flex-start;
     align-items: center;
-
 }
 .iconoMenu {
     cursor: pointer;
@@ -100,6 +99,11 @@ h1 {
     margin: 5px;
     background-color:azure;
 }
+.signoPrecio {
+    display: flex;
+    margin-top: 5px;
+    width: auto;
+}
 .numberr, .color {
     display: none;
 }
@@ -123,15 +127,15 @@ button:hover {
     background-color: grey;
 }
 footer {
-        width: 80%;
-        height: 60px;
-        background-color: rgb(51, 50, 50);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        bottom: -60px;
-        z-index: 10;
+    width: 80%;
+    height: 60px;
+    background-color: rgb(51, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -60px;
+    z-index: 10;
 }
 .avisoDeCompra {
     width: 10em;
@@ -157,6 +161,9 @@ footer {
     .iconoMenu {
         display: block;
         width: 1.5em;
+    }
+    .signoPrecio {
+        font-size: 14px;
     }
 }
 
