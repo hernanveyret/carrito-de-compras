@@ -150,9 +150,8 @@ function mostrarCarrito(){
     let htmlCarrito = ''
         htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
         htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
-        htmlCarrito += `<tr>`
-        
-        htmlCarrito += `<th>Articulo</th>`
+    htmlCarrito += `<tr>`        
+        htmlCarrito += `<th>Art.</th>`
         htmlCarrito += `<th>Marca</th>`
         htmlCarrito += `<th>Nº</th>`
         htmlCarrito += `<th>Color</th>`
