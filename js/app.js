@@ -87,6 +87,7 @@ for (let i = 0; i < articulos.length; i++) {
             html += `<p class="marca">${articulos[i][4]}</p>`;
             html += `<img src="${articulos[i][6]}" alt="Calzado ${articulos[i][8]}" />`;
             html += `<select id="${articulos[i][8]}" data-id="${articulos[i][8]}" onchange="seleccion()">`;
+            html +=  ` <option>Numeracion</option>`
                             for ( let n = articulos[i][2]; n <= articulos[i][3]; n++) {
                         html +=  ` <option value="${n}">Nº ${n}</option>`
                                 }
