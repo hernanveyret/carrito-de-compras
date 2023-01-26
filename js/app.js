@@ -151,17 +151,17 @@ function mostrarCarrito(){
         htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
         htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
         htmlCarrito += `<tr>`
-        htmlCarrito += `<th>Item</th>`
+        
         htmlCarrito += `<th>Articulo</th>`
         htmlCarrito += `<th>Marca</th>`
-        htmlCarrito += `<th>Numero</th>`
+        htmlCarrito += `<th>Nº</th>`
         htmlCarrito += `<th>Color</th>`
         htmlCarrito += `<th>Cant.</th>`
         htmlCarrito += `<th>Precio</th>`
     htmlCarrito += `</tr>`
     for (  m = 0; m < productosSeleccionados.length; m++) {
       htmlCarrito += `<tr>`
-      htmlCarrito += `<td>${m+1}</td>`
+      
       htmlCarrito += `<td>${productosSeleccionados[m].nArticulo}</td>`
       htmlCarrito += `<td>${productosSeleccionados[m].marca}</td>`
       htmlCarrito += `<td>${productosSeleccionados[m].numero}</td>`
