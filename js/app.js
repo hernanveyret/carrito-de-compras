@@ -92,7 +92,11 @@ for (let i = 0; i < articulos.length; i++) {
                         html +=  ` <option value="${n}">Nº ${n}</option>`
                                 }
             html += `</select>`;
-            html += `<p class="precio">$ ${articulos[i][5]}</p>`;
+        
+            html += `<div class="signoPrecio">`          
+            html += `<p>$</p>`
+            html += `<p class="precio"> ${articulos[i][5]}</p>`;
+            html += `</div>`
             html += `<button data-id="${articulos[i][0]}" class="btn">COMPRAR</button>`;
             html += `<span class="numberr" data-miNumero="${articulos[i][9]}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[i][7]}</span>`;
         
