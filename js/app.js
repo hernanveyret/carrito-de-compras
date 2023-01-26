@@ -6,18 +6,23 @@ let artId;
 let miNumero;
 let contador = 0;
 let m;
+let productosSeleccionados
+
 const carrito = [];
 const producto = [];
 const articulos = [
-    [1,320,34,47,'Jaguar',3500,'black.png','black','320black','id320black'],
-    [2,320,34,47,'Jaguar',3500,'blanca.png','blanca','320blanco','id320blanco'],
-    [3,4077,35,44,'Shadow',4900,'4077.png','marron','4077marron','id4077marron'],
-    [4,128,19,26,'Jaguar',1900,'rosa.png','rosa','128/1rosa','id128/1rosa'],
-    [5,128,27,33,'Jaguar',1900,'jean.png','jean','128/2jean','id128/2jean'],
-    [6,2010,35,40,'Cromic',2100,'2010.png','rosa','2010/2rosa','id2010/2rosa'],
-    [7,2010,35,40,'Cromic',2100,'2010-negra.png','negra','2010/2negra','id2010/2negra'],
-    [8,1153,19,26,'Tridy',2500,'1153-negra.png','negra','1153negra','id1153negra'],
-    [9,1153,19,26,'Tridy',2500,'1153-blanca.png','blanca','1153blanca','id1153blanca']
+    [1,320,34,47,'Jaguar',3500,'img/productos/320-black.png','black','320black','id320black'],
+    [2,320,34,47,'Jaguar',3500,'img/productos/320-blanca.png','blanca','320blanco','id320blanco'],
+    [3,4077,35,44,'Shadow',4900,'img/productos/4077.png','marron','4077marron','id4077marron'],
+    [4,128,19,26,'Jaguar',1900,'img/productos/128-rosa.png','rosa','128/1rosa','id128/1rosa'],
+    [5,128,27,33,'Jaguar',1900,'img/productos/128-jean.png','jean','128/2jean','id128/2jean'],
+    [6,2010,35,40,'Cromic',2100,'img/productos/2010-rosa.png','rosa','2010/2rosa','id2010/2rosa'],
+    [7,2010,35,40,'Cromic',2100,'img/productos/2010-negra.png','negra','2010/2negra','id2010/2negra'],
+    [8,1153,19,26,'Tridy',2500,'img/productos/1153-negra.png','negra','1153negra','id1153negra'],
+    [9,1153,19,26,'Tridy',2500,'img/productos/1153-blanca.png','blanca','1153blanca','id1153blanca'],
+    [10,'EXTREME 01', 39,45,'Ringo','15900','img/productos/extreme01-negra.png','negra','extreme01negra','idextreme01negra'],
+    [11,286,35,41,'Arana',9800,'img/productos/286-suela.png','suela','286suela','id286suela'],
+    [12,1778,35,40,'Airness',8700,'img/productos/1778-multicolor.png','multicolor','1778multicolor','id1778multicolor']
 ]
 /*
 La base de datos va a salir de un Json en forma de arrays de datos o desde un js.
@@ -80,7 +85,7 @@ for (let i = 0; i < articulos.length; i++) {
             html += `<section class="cards">`
             html += `<p class="articulo">${articulos[i][1]}</p>`;
             html += `<p class="marca">${articulos[i][4]}</p>`;
-            html += `<img src="${articulos[i][6]}" alt="Zapatilla Jaguar art 320 black" />`;
+            html += `<img src="${articulos[i][6]}" alt="Calzado ${articulos[i][8]}" />`;
             html += `<select id="${articulos[i][8]}" data-id="${articulos[i][8]}" onchange="seleccion()">`;
                             for ( let n = articulos[i][2]; n <= articulos[i][3]; n++) {
                         html +=  ` <option value="${n}">Nº ${n}</option>`
@@ -125,6 +130,7 @@ contenedor.addEventListener('click', (e) => {
         })  
 
         localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // el articulo comprado queda persistente
+        
         checkCompra()
     }
     
@@ -139,26 +145,35 @@ function mostrarCarrito(){
   
   document.getElementById('carritoContenedor').style.borderRadius="5px";
     
+  productosSeleccionados = JSON.parse(localStorage.getItem("articulosCarrito")); // creo una variable como array de objetos de la informacion que esta en localStorage
+   
     let htmlCarrito = ''
-            htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
-            htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
-        
-for (  m = 0; m < producto.length; m++) {
-  
-            htmlCarrito += `<tr>`
-            htmlCarrito += `<td>${m+1}</td>`
-            htmlCarrito += `<td>${producto[m].nArticulo}</td>`
-            htmlCarrito += `<td>${producto[m].marca}</td>`
-            htmlCarrito += `<td>${producto[m].numero}</td>`
-            htmlCarrito += `<td>${producto[m].color}</td>`
-            htmlCarrito += `<td>${producto[m].cantidad}</td>`
-            htmlCarrito += `<td>${producto[m].precio}</td>`
-            htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
-            htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
-            htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
-            htmlCarrito += `</tr>`
-            
-}
+        htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
+        htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
+        htmlCarrito += `<tr>`
+        htmlCarrito += `<th>Item</th>`
+        htmlCarrito += `<th>Articulo</th>`
+        htmlCarrito += `<th>Marca</th>`
+        htmlCarrito += `<th>Numero</th>`
+        htmlCarrito += `<th>Color</th>`
+        htmlCarrito += `<th>Cant.</th>`
+        htmlCarrito += `<th>Precio</th>`
+    htmlCarrito += `</tr>`
+    for (  m = 0; m < productosSeleccionados.length; m++) {
+      htmlCarrito += `<tr>`
+      htmlCarrito += `<td>${m+1}</td>`
+      htmlCarrito += `<td>${productosSeleccionados[m].nArticulo}</td>`
+      htmlCarrito += `<td>${productosSeleccionados[m].marca}</td>`
+      htmlCarrito += `<td>${productosSeleccionados[m].numero}</td>`
+      htmlCarrito += `<td>${productosSeleccionados[m].color}</td>`
+      htmlCarrito += `<td>${productosSeleccionados[m].cantidad}</td>`
+      htmlCarrito += `<td>${productosSeleccionados[m].precio}</td>`
+      htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
+      htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
+      htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
+      htmlCarrito += `</tr>`
+      
+    }
            
             htmlCarrito += `</table>`            
             htmlCarrito += `<div class="btn-contenedor-carrito">`
@@ -166,6 +181,7 @@ for (  m = 0; m < producto.length; m++) {
             htmlCarrito += `<button onclick="vaciarCarrito()">VACIAR CARRITO</button>`
             htmlCarrito += `<button class="btn-pagar" onclick="pagar()">PAGAR</button>`
             htmlCarrito += `</div>`
+            
             carritoContenedor.innerHTML = htmlCarrito;           
 
 }
@@ -176,7 +192,10 @@ function seguirComprando() {
 }
 
 function checkCompra() {
+let cantidadDeProductos = producto.length;
+cantidadProductos.innerHTML = cantidadDeProductos;
  document.querySelector('.avisoDeCompra').style.display='inline-block';
+ 
 }
 
 function cerrarPestaña(){
