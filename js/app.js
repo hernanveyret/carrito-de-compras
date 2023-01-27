@@ -7,9 +7,23 @@ let miNumero;
 let contador = 0;
 let m;
 let productosSeleccionados
+let cantidadDeProductos;
 
-const carrito = [];
+let productosPersistentes;
 const producto = [];
+
+// Ve si hay productos en el localStorage
+if ( localStorage.getItem("articulosCarrito")) {
+  console.log('hay productos guardados');
+  productosPersistentes = JSON.parse(localStorage.getItem("articulosCarrito"));
+  for ( let i = 0; i < productosPersistentes.length; i++){
+  producto.push(productosPersistentes[i]);
+
+}}
+// agrega la cantidad de productos a la bolsita en el header
+cantidadDeProductos = producto.length;
+cantidadProductos.innerHTML = cantidadDeProductos
+
 const articulos = [
     [1,320,34,47,'Jaguar',3500,'img/productos/320-black.png','black','320black','id320black'],
     [2,320,34,47,'Jaguar',3500,'img/productos/320-blanca.png','blanca','320blanco','id320blanco'],
@@ -79,6 +93,7 @@ const articulo = [
     }
 ]
 */
+  // crear las cards de cada producto
 for (let i = 0; i < articulos.length; i++) {
   artId = articulos[i][0];
         let html = ''
@@ -116,8 +131,7 @@ contenedor.addEventListener('click', (e) => {
   objetoSelect = e.target.parentElement;
   objetoSelectId = objetoSelect.querySelector('select').dataset.id;
   idArticulo = objetoSelectId
-
-    
+ 
     const clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
                                                 // con esta info puedo crear el array de objetos con el producto.
     const boton = e.target.classList.contains('btn'); // elijo el boton para hacer alguna accion, al hacer clcik devuelve true.
@@ -146,40 +160,36 @@ function mostrarCarrito(){
   return;
 }
  
-  document.getElementById('carritoContenedor').style.display="block";
-  
+  document.getElementById('carritoContenedor').style.display="block"; 
   document.getElementById('carritoContenedor').style.borderRadius="5px";
-    
-  productosSeleccionados = JSON.parse(localStorage.getItem("articulosCarrito")); // creo una variable como array de objetos de la informacion que esta en localStorage
    
     let htmlCarrito = ''
         htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
         htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
-    htmlCarrito += `<tr>`        
-        htmlCarrito += `<th>Art.</th>`
-        htmlCarrito += `<th>Marca</th>`
-        htmlCarrito += `<th>Nº</th>`
-        htmlCarrito += `<th>Color</th>`
-        htmlCarrito += `<th>Cant.</th>`
-        htmlCarrito += `<th>Precio</th>`
-    htmlCarrito += `</tr>`
-    for (  m = 0; m < productosSeleccionados.length; m++) {
-      htmlCarrito += `<tr>`
-      
-      htmlCarrito += `<td>${productosSeleccionados[m].nArticulo}</td>`
-      htmlCarrito += `<td>${productosSeleccionados[m].marca}</td>`
-      htmlCarrito += `<td>${productosSeleccionados[m].numero}</td>`
-      htmlCarrito += `<td>${productosSeleccionados[m].color}</td>`
-      htmlCarrito += `<td>${productosSeleccionados[m].cantidad}</td>`
-      htmlCarrito += `<td>${productosSeleccionados[m].precio}</td>`
-      htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
-      htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
-      htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
-      htmlCarrito += `</tr>`
-      
+        
+        htmlCarrito += `<tr>`        
+            htmlCarrito += `<th>Art.</th>`
+            htmlCarrito += `<th>Marca</th>`
+            htmlCarrito += `<th>Nº</th>`
+            htmlCarrito += `<th>Color</th>`
+            htmlCarrito += `<th>Cant.</th>`
+            htmlCarrito += `<th>Precio</th>`
+        htmlCarrito += `</tr>`
+    for (  m = 0; m < producto.length; m++) {
+        htmlCarrito += `<tr>`      
+            htmlCarrito += `<td>${producto[m].nArticulo}</td>`
+            htmlCarrito += `<td>${producto[m].marca}</td>`
+            htmlCarrito += `<td>${producto[m].numero}</td>`
+            htmlCarrito += `<td>${producto[m].color}</td>`
+            htmlCarrito += `<td>${producto[m].cantidad}</td>`
+            htmlCarrito += `<td>${producto[m].precio}</td>`
+            htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
+            htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
+            htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
+        htmlCarrito += `</tr>`
     }
-           
             htmlCarrito += `</table>`            
+
             htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
             htmlCarrito += `<button onclick="vaciarCarrito()">VACIAR CARRITO</button>`
@@ -191,12 +201,11 @@ function mostrarCarrito(){
 }
 
 function seguirComprando() {
-  document.getElementById('carritoContenedor').style.display="none"
-  
+  document.getElementById('carritoContenedor').style.display="none" 
 }
 
 function checkCompra() {
-let cantidadDeProductos = producto.length;
+cantidadDeProductos = producto.length;
 cantidadProductos.innerHTML = cantidadDeProductos;
  document.querySelector('.avisoDeCompra').style.display='inline-block';
  
