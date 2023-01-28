@@ -156,7 +156,8 @@ contenedor.addEventListener('click', (e) => {
 });
 
 function mostrarCarrito(){
-  if ( producto.length === 0) { alert('El carrito esta vacio')
+  if ( producto.length === 0) {
+    mostrarCarritoVacio()
   return;
 }
  
@@ -233,5 +234,18 @@ function borrarProducto() {
 }
 a.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento   
 })
+}
 
+function mostrarCarritoVacio() {
+  document.getElementById('carritoContenedor').style.display="none" 
+  document.getElementById('carritoContenedor').style.display="block" 
+  let htmlCarrito = ''
+      htmlCarrito += `<div style="width:20em; border: 1px solid black">`
+      htmlCarrito += `<p style="text-align: center">TU BOLSA ESTA VACIA</p>`
+      htmlCarrito += `<div class="btn-contenedor-carrito">`
+            htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
+      htmlCarrito += `</div>`
+      htmlCarrito += `</div>`      
+            carritoContenedor.innerHTML = htmlCarrito;   
+  
 }
