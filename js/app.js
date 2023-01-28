@@ -10,18 +10,14 @@ let productosSeleccionados
 let cantidadDeProductos;
 let subTotal = 0;
 let importeTotal;
-     importeTotal = localStorage.getItem('totalImporte',importeTotal); // guardo el importe total en localStorage
-    importeTotal = parseFloat(importeTotal)
+     importeTotal = parseFloat(localStorage.getItem('totalImporte',importeTotal));
 let importeRestar = 0;  
 let productosPersistentes;
 let clickObjeto;
 const producto = [];
 
-
-
 // Ve si hay productos en el localStorage
 if ( localStorage.getItem("articulosCarrito")) {
-  console.log('hay productos guardados');
   productosPersistentes = JSON.parse(localStorage.getItem("articulosCarrito"));
   for ( let i = 0; i < productosPersistentes.length; i++){
   producto.push(productosPersistentes[i]);
@@ -248,6 +244,20 @@ function borrarProducto() {
 }
 a.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento   
 })
+}
+
+function vaciarCarrito() {
+ let vaciarCarrito = producto.length;
+ producto.splice(0,vaciarCarrito)
+ localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+ subTotal = 0;
+ importeTotal = 0;
+ localStorage.setItem('totalImporte',importeTotal);
+ cantidadDeProductos = producto.length;
+ cantidadProductos.innerHTML = cantidadDeProductos;
+ console.log(producto)
+  
+ mostrarCarritoVacio()
 }
 
 function mostrarCarritoVacio() {
