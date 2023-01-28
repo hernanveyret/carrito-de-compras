@@ -8,9 +8,16 @@ let contador = 0;
 let m;
 let productosSeleccionados
 let cantidadDeProductos;
-
+let subTotal = 0;
+let importeTotal;
+     importeTotal = localStorage.getItem('totalImporte',importeTotal); // guardo el importe total en localStorage
+    importeTotal = parseFloat(importeTotal)
+let importeRestar = 0;  
 let productosPersistentes;
+let clickObjeto;
 const producto = [];
+
+
 
 // Ve si hay productos en el localStorage
 if ( localStorage.getItem("articulosCarrito")) {
@@ -132,7 +139,7 @@ contenedor.addEventListener('click', (e) => {
   objetoSelectId = objetoSelect.querySelector('select').dataset.id;
   idArticulo = objetoSelectId
  
-    const clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
+    clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
                                                 // con esta info puedo crear el array de objetos con el producto.
     const boton = e.target.classList.contains('btn'); // elijo el boton para hacer alguna accion, al hacer clcik devuelve true.
        // console.log(boton) // al hacer click en el boton devuelve true
@@ -149,7 +156,10 @@ contenedor.addEventListener('click', (e) => {
         })  
 
         localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // el articulo comprado queda persistente
-        
+        subTotal = clickObjeto.querySelector('.precio').textContent;
+        subTotal = parseFloat(subTotal)
+        importeTotal = importeTotal + subTotal;
+        localStorage.setItem('totalImporte',importeTotal); // guardo el importe total en localStorage
         checkCompra()
     }
     
@@ -189,13 +199,16 @@ function mostrarCarrito(){
             htmlCarrito += `<td><button class="btn-borrar-producto" data-btnborrar="${m}" onclick="borrarProducto()">BORRAR</button></td>`
         htmlCarrito += `</tr>`
     }
-            htmlCarrito += `</table>`            
-
-            htmlCarrito += `<div class="btn-contenedor-carrito">`
+        htmlCarrito += `</table>`     
+        
+        htmlCarrito += `<div style="width: 100%; display: flex; justify-content: space-around;">`
+            htmlCarrito += `<p> Cant. Total: ${producto.length}</p><p>Importe Total. $ ${importeTotal}</p>`
+        htmlCarrito += `</div>`
+        htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
             htmlCarrito += `<button onclick="vaciarCarrito()">VACIAR CARRITO</button>`
             htmlCarrito += `<button class="btn-pagar" onclick="pagar()">PAGAR</button>`
-            htmlCarrito += `</div>`
+        htmlCarrito += `</div>`
             
             carritoContenedor.innerHTML = htmlCarrito;           
 
@@ -208,7 +221,7 @@ function seguirComprando() {
 function checkCompra() {
 cantidadDeProductos = producto.length;
 cantidadProductos.innerHTML = cantidadDeProductos;
- document.querySelector('.avisoDeCompra').style.display='inline-block';
+document.querySelector('.avisoDeCompra').style.display='inline-block';
  
 }
 
@@ -222,11 +235,12 @@ function borrarProducto() {
   
     const productoSelected = a.target.parentElement;
     const botonBorrar = a.target.classList.contains('btn-borrar-producto');
-    console.log(botonBorrar)
     if ( botonBorrar == true) { 
     const idBorrarProducto = productoSelected.querySelector('.btn-borrar-producto').dataset.btnborrar;
-    producto.splice(idBorrarProducto,1); // borra el producto segun su id
-    console.log(idBorrarProducto)    
+    importeRestar = parseFloat(producto[idBorrarProducto].precio);
+    importeTotal = importeTotal - importeRestar;
+    localStorage.setItem('totalImporte',importeTotal); // guardo el importe total en localStorage
+    producto.splice(idBorrarProducto,1); // borra el producto segun su id    
     localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
     cantidadDeProductos = producto.length;
     cantidadProductos.innerHTML = cantidadDeProductos;
@@ -245,7 +259,9 @@ function mostrarCarritoVacio() {
       htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
       htmlCarrito += `</div>`
-      htmlCarrito += `</div>`      
+      htmlCarrito += `</div>`
+  subTotal = 0;
+  importeTotal = 0;
             carritoContenedor.innerHTML = htmlCarrito;   
   
 }
