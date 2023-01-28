@@ -7,3 +7,7 @@ Pagina de venta de calzados / carrito de compras / practicando lo aprendido / ap
              siendo la "a" el evento del addEventListener.
 
 28/01/2023: Agregue cuando el carrito queda vacio aparece un cartel diciendo que la bolsa esta vacia y da la opcion de seguir comprando.
+
+28/01/2023: Ahora cuando se borra un producto lo descuenta del total a pagar y cuando agregamos un producto lo suma, tambien quedo el total persistente " TENGO QUE
+            HACER QUE QUEDE PERSISTENTE DE OTRA FORMA", no me convence que quede el precio en el localStorage.
+            
