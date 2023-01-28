@@ -183,9 +183,9 @@ function mostrarCarrito(){
             htmlCarrito += `<td>${producto[m].color}</td>`
             htmlCarrito += `<td>${producto[m].cantidad}</td>`
             htmlCarrito += `<td>${producto[m].precio}</td>`
-            htmlCarrito += `<td><button class="btn-mas" onclick="sumarCantidad()">+</button></td>`
-            htmlCarrito += `<td><button class="btn-menos" onclick="restarCantidad()">-</button></td>`
-            htmlCarrito += `<td><button class="btn-borrar-producto" onclick="borrarproducto()">BORRAR</button></td>`
+            htmlCarrito += `<td><button class="btn-mas" data-btnsuma="${m}">+</button></td>`
+            htmlCarrito += `<td><button class="btn-menos" data-btnresta="${m}">-</button></td>`
+            htmlCarrito += `<td><button class="btn-borrar-producto" data-btnborrar="${m}" onclick="borrarProducto()">BORRAR</button></td>`
         htmlCarrito += `</tr>`
     }
             htmlCarrito += `</table>`            
@@ -213,4 +213,25 @@ cantidadProductos.innerHTML = cantidadDeProductos;
 
 function cerrarPestaña(){
 document.querySelector('.avisoDeCompra').style.display="none";
+}
+
+function borrarProducto() {
+  const carritoConteiner = document.querySelector('.carrito-Contenedor');
+  carritoConteiner.addEventListener('click', (a) => {
+  
+    const productoSelected = a.target.parentElement;
+    const botonBorrar = a.target.classList.contains('btn-borrar-producto');
+    console.log(botonBorrar)
+    if ( botonBorrar == true) { 
+    const idBorrarProducto = productoSelected.querySelector('.btn-borrar-producto').dataset.btnborrar;
+    producto.splice(idBorrarProducto,1); // borra el producto segun su id
+    console.log(idBorrarProducto)    
+    localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+    cantidadDeProductos = producto.length;
+    cantidadProductos.innerHTML = cantidadDeProductos;
+    mostrarCarrito()
+}
+a.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento   
+})
+
 }
