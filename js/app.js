@@ -8,6 +8,8 @@ let contador = 0;
 let m;
 let productosSeleccionados
 let cantidadDeProductos;
+let cantidadDeProductosCarrito = 0;
+    cantidadDeProductosCarrito = parseFloat(cantidadDeProductosCarrito);
 let subTotal = 0;
 let importeTotal;
      importeTotal = parseFloat(localStorage.getItem('totalImporte',importeTotal));
@@ -172,7 +174,7 @@ function mostrarCarrito(){
    
     let htmlCarrito = ''
         htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
-        htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7">`
+        htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7" class="tablaCarrito">`
         
         htmlCarrito += `<tr>`        
             htmlCarrito += `<th>Art.</th>`
@@ -190,8 +192,8 @@ function mostrarCarrito(){
             htmlCarrito += `<td>${producto[m].color}</td>`
             htmlCarrito += `<td>${producto[m].cantidad}</td>`
             htmlCarrito += `<td>${producto[m].precio}</td>`
-            htmlCarrito += `<td><button class="btn-mas" data-btnsuma="${m}">+</button></td>`
-            htmlCarrito += `<td><button class="btn-menos" data-btnresta="${m}">-</button></td>`
+            htmlCarrito += `<td><button class="btn-mas" data-btnsuma="${m}" onclick="sumarproducto()">+</button></td>`
+            htmlCarrito += `<td><button class="btn-menos" data-btnresta="${m}" onclick="restarProducto()">-</button></td>`
             htmlCarrito += `<td><button class="btn-borrar-producto" data-btnborrar="${m}" onclick="borrarProducto()">BORRAR</button></td>`
         htmlCarrito += `</tr>`
     }
@@ -246,6 +248,49 @@ a.stopImmediatePropagation() // evita que se multipliquen los eventos en un mism
 })
 }
 
+function sumarproducto() {
+  const carritoConteinerSumar = document.querySelector('.tablaCarrito');
+        carritoConteinerSumar.addEventListener('click',(o) => {
+  const productoSelectedSumar = o.target.parentElement;
+  const botonSumar = o.target.classList.contains('btn-mas');
+  if (botonSumar == true) {
+    const idSumarProducto = productoSelectedSumar.querySelector('.btn-mas').dataset.btnsuma;
+    
+    let sumarProductos = parseFloat(producto[idSumarProducto].cantidad)
+    sumarProductos = sumarProductos + 1
+    producto[idSumarProducto].cantidad = sumarProductos
+    localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+    mostrarCarrito()
+  
+  o.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento  
+}
+ 
+})
+}
+
+function restarProducto() {
+  const carritoConteinerRestar = document.querySelector('.tablaCarrito');
+        carritoConteinerRestar.addEventListener('click',(u) => {
+  const productoSelectedRestar = u.target.parentElement;
+  const botonRestar = u.target.classList.contains('btn-menos');
+  if (botonRestar == true) {
+    const idRestarProducto = productoSelectedRestar.querySelector('.btn-menos').dataset.btnresta;
+    
+    let restarProductos = parseFloat(producto[idRestarProducto].cantidad)
+    restarProductos = restarProductos - 1
+    producto[idRestarProducto].cantidad = restarProductos
+    localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+    if (producto[idRestarProducto].cantidad == 0) {
+      producto.splice(idRestarProducto,1)
+    }
+    mostrarCarrito()
+  
+  u.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento  
+}
+ 
+})
+}
+
 function vaciarCarrito() {
  let vaciarCarrito = producto.length;
  producto.splice(0,vaciarCarrito)
@@ -255,8 +300,7 @@ function vaciarCarrito() {
  localStorage.setItem('totalImporte',importeTotal);
  cantidadDeProductos = producto.length;
  cantidadProductos.innerHTML = cantidadDeProductos;
- console.log(producto)
-  
+ 
  mostrarCarritoVacio()
 }
 
