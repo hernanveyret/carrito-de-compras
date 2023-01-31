@@ -6,9 +6,9 @@ let artId;
 let miNumero;
 let contador = 0;
 let m;
-let productosSeleccionados
-let cantidadDeProductos;
-let cantidadDeProductosCarrito = 0;
+    let productosSeleccionados
+    let cantidadDeProductos = 0;  parseInt(cantidadDeProductos)
+    let cantidadDeProductosCarrito = 0;
     cantidadDeProductosCarrito = parseFloat(cantidadDeProductosCarrito);
 let subTotal = 0;
 let importeTotal;
@@ -16,9 +16,10 @@ let importeTotal;
 let importeRestar = 0;  
 let productosPersistentes;
 let clickObjeto;
+    let sumar = 0;
 const producto = [];
 
-// Ve si hay productos en el localStorage
+// Ve si hay productos en el localStorage y los agrega al carrito
 if ( localStorage.getItem("articulosCarrito")) {
   productosPersistentes = JSON.parse(localStorage.getItem("articulosCarrito"));
   for ( let i = 0; i < productosPersistentes.length; i++){
@@ -26,8 +27,13 @@ if ( localStorage.getItem("articulosCarrito")) {
 
 }}
 // agrega la cantidad de productos a la bolsita en el header
-cantidadDeProductos = producto.length;
-cantidadProductos.innerHTML = cantidadDeProductos
+  for ( let i = 0; i < producto.length; i++){
+    sumar = producto[i].cantidad
+    sumar = parseInt(sumar)
+    cantidadDeProductos = cantidadDeProductos + sumar
+  }   
+  cantidadProductos.innerHTML = cantidadDeProductos
+  
 
 const articulos = [
     [1,320,34,47,'Jaguar',3500,'img/productos/320-black.png','black','320black','id320black'],
@@ -192,15 +198,15 @@ function mostrarCarrito(){
             htmlCarrito += `<td>${producto[m].color}</td>`
             htmlCarrito += `<td>${producto[m].cantidad}</td>`
             htmlCarrito += `<td>${producto[m].precio}</td>`
-            htmlCarrito += `<td><button class="btn-mas" data-btnsuma="${m}" onclick="sumarproducto()">+</button></td>`
-            htmlCarrito += `<td><button class="btn-menos" data-btnresta="${m}" onclick="restarProducto()">-</button></td>`
-            htmlCarrito += `<td><button class="btn-borrar-producto" data-btnborrar="${m}" onclick="borrarProducto()">BORRAR</button></td>`
+            htmlCarrito += `<td><button class="btn-mas" data-btnsuma="${m}">+</button></td>`
+            htmlCarrito += `<td><button class="btn-menos" data-btnresta="${m}">-</button></td>`
+            htmlCarrito += `<td><button class="btn-borrar-producto" data-btnborrar="${m}">BORRAR</button></td>`
         htmlCarrito += `</tr>`
     }
         htmlCarrito += `</table>`     
         
         htmlCarrito += `<div style="width: 100%; display: flex; justify-content: space-around;">`
-            htmlCarrito += `<p> Cant. Total: ${producto.length}</p><p>Importe Total. $ ${importeTotal}</p>`
+            htmlCarrito += `<p> Cant. Total: ${cantidadDeProductos}</p><p>Importe Total. $ ${importeTotal}</p>`
         htmlCarrito += `</div>`
         htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
@@ -217,8 +223,9 @@ function seguirComprando() {
 }
 
 function checkCompra() {
-cantidadDeProductos = producto.length;
-cantidadProductos.innerHTML = cantidadDeProductos;
+// agrega la cantidad de productos a la bolsita en el header
+cantidadDeProductos = cantidadDeProductos + 1
+cantidadProductos.innerHTML = cantidadDeProductos
 document.querySelector('.avisoDeCompra').style.display='inline-block';
  
 }
@@ -226,8 +233,7 @@ document.querySelector('.avisoDeCompra').style.display='inline-block';
 function cerrarPestaña(){
 document.querySelector('.avisoDeCompra').style.display="none";
 }
-
-function borrarProducto() {
+  // borrar producto unitario
   const carritoConteiner = document.querySelector('.carrito-Contenedor');
   carritoConteiner.addEventListener('click', (a) => {
   
@@ -244,52 +250,48 @@ function borrarProducto() {
     cantidadProductos.innerHTML = cantidadDeProductos;
     mostrarCarrito()
 }
-a.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento   
-})
-}
-
-function sumarproducto() {
-  const carritoConteinerSumar = document.querySelector('.tablaCarrito');
-        carritoConteinerSumar.addEventListener('click',(o) => {
-  const productoSelectedSumar = o.target.parentElement;
-  const botonSumar = o.target.classList.contains('btn-mas');
+  // boton sumar producto unitario
+const botonSumar = a.target.classList.contains('btn-mas');
   if (botonSumar == true) {
-    const idSumarProducto = productoSelectedSumar.querySelector('.btn-mas').dataset.btnsuma;
-    
+    const idSumarProducto = productoSelected.querySelector('.btn-mas').dataset.btnsuma;
+
+    let sumar = parseInt(producto[idSumarProducto].precio)
+    importeTotal = importeTotal + sumar;
+    localStorage.setItem('totalImporte',importeTotal); // guardo el importe total en localStorage
     let sumarProductos = parseFloat(producto[idSumarProducto].cantidad)
     sumarProductos = sumarProductos + 1
     producto[idSumarProducto].cantidad = sumarProductos
     localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+    cantidadDeProductos = cantidadDeProductos + 1
+    cantidadProductos.innerHTML = cantidadDeProductos;
     mostrarCarrito()
   
-  o.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento  
 }
- 
-})
-}
-
-function restarProducto() {
-  const carritoConteinerRestar = document.querySelector('.tablaCarrito');
-        carritoConteinerRestar.addEventListener('click',(u) => {
-  const productoSelectedRestar = u.target.parentElement;
-  const botonRestar = u.target.classList.contains('btn-menos');
+    // boton restar producto unitario
+const botonRestar = a.target.classList.contains('btn-menos');
   if (botonRestar == true) {
-    const idRestarProducto = productoSelectedRestar.querySelector('.btn-menos').dataset.btnresta;
+    const idRestarProducto = productoSelected.querySelector('.btn-menos').dataset.btnresta;
     
+    let sumar = parseInt(producto[idRestarProducto].precio)
+    importeTotal = importeTotal - sumar;
+    localStorage.setItem('totalImporte',importeTotal); // guardo el importe total en localStorage
+
     let restarProductos = parseFloat(producto[idRestarProducto].cantidad)
     restarProductos = restarProductos - 1
     producto[idRestarProducto].cantidad = restarProductos
     localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+    cantidadDeProductos = cantidadDeProductos - 1
+    cantidadProductos.innerHTML = cantidadDeProductos;
     if (producto[idRestarProducto].cantidad == 0) {
-      producto.splice(idRestarProducto,1)
+        producto.splice(idRestarProducto,1);
+        localStorage.setItem("articulosCarrito",JSON.stringify(producto)); // se actualiza la base de datos del localStorage
+        cantidadProductos.innerHTML = 0;
     }
     mostrarCarrito()
   
-  u.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento  
+  a.stopImmediatePropagation() // evita que se multipliquen los eventos en un mismo evento  
 }
- 
 })
-}
 
 function vaciarCarrito() {
  let vaciarCarrito = producto.length;
