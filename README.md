@@ -10,3 +10,6 @@ Pagina de venta de calzados / carrito de compras / practicando lo aprendido / ap
                HACER QUE QUEDE PERSISTENTE DE OTRA FORMA", no me convence que quede el precio en el localStorage.         
             4) Quedo funcionando el boton vaciar carrito.
             5) Agregue la funcion de sumar y restar productos individuales en el carrito, cuando restas y llega a (0)cero se elimina el producto del carrito.
+            
+30/01/2023: 1) Mejore las funciones de borrar, sumar y restar los productos unitarios, quedo con menos codigo y mas 
+31/01/2023: 1) Agregue a las funciones de sumar y restar producto unitario la modificacion en el total del importe, se actualiza el carrito y queda persistente.
