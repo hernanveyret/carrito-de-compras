@@ -13,3 +13,4 @@ Pagina de venta de calzados / carrito de compras / practicando lo aprendido / ap
             
 30/01/2023: 1) Mejore las funciones de borrar, sumar y restar los productos unitarios, quedo con menos codigo y mas 
 31/01/2023: 1) Agregue a las funciones de sumar y restar producto unitario la modificacion en el total del importe, se actualiza el carrito y queda persistente.
+01/02/2023: 1) Cambie para la base de datos de un array a un array de objetos, queda mucho mejor a la hora de cargar diferentes articulos, ya que por cada valor tiene un                nombre y se puede identificar bien que poner,  ejemplo, si tenemos que poner el color, queda color: 'Negro'.
