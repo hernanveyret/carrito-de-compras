@@ -93,7 +93,7 @@ h1 {
 .cards {
     border: 2px solid white;
     box-shadow: 1px 1px 9px black;
-    width: 30%;
+    width: 23%;
     height: auto;
     display: flex;
     align-items: center;
@@ -161,7 +161,10 @@ footer {
 .headerIzquerdo ul {
     display: none;
 }
+.selectNumero {
+    width: 95%;
     
+}
 .headerIzquerdo:hover  ul {
         display: inline-block;
         position: absolute;
@@ -179,7 +182,7 @@ footer {
         width: 100%;
     }
     .headerIzquerdo ul li:hover {
-        background-color: grey;
+        background-color: rgb(94, 91, 91);
     }
    
     .iconoMenu {
@@ -200,6 +203,9 @@ footer {
     }
     .cards {
         width: 80%;
+    }
+    .selectNumero {
+        width: 35%;
     }
     h1 {
         font-size: 14px;
