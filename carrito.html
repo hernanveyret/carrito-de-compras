@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/estiloCarrito.css" />
-    <link rel="stylesheet" href="css/inicio.css" />
-    <title>Calzados Abi</title>
+    <title>CALZADOS ABI</title>
 </head>
 <body>
+
     <header>
         <div class="headerIzquerdo">
             <img src="img/imagenes/menuico.png" alt="Icono de menu" class="iconoMenu"  />
@@ -38,15 +38,22 @@
 <!-- ACA VA EL MENU PRINCIPAL PARA WEBMOVILE-->
     </div>
 
-    <main class="contenedor">    
-          <img src="img/catalogo jpg/01tapacatalogo.jpg" alt="Tapa del catalogo primavera-Verano" class="portada" />
+    <main class="contenedor" id="contenedorArticulos">    
+          
     </main>
     <footer>
 
     </footer>  
     
 
-   
+    <section id="carritoContenedor" class="carrito-Contenedor"> 
+       <!--ACA VAN A APARECE LO QUE SE COMPRO O CARTEL DE CONFIRMACION DE QUE SE COMPRO ALGO--> 
+    </section>
+    <div class="avisoDeCompra" id="avisoDeCompras">
+        <p>Se añadio a tu compra</p>
+        <button class="btn-checkCompra" onclick="cerrarPestaña()">ACEPTAR</button>
+    </div>
+    <script src="js/app.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
