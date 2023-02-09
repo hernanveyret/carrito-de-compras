@@ -1,3 +1,6 @@
 .portada {
     width: 90%;
 }
+#catalogoContenedor img {
+    width: 80%;
+}

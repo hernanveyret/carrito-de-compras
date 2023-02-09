@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
     position: fixed;
-    top: 65px;
+    top: 85px;
     box-shadow: 2px 2px 5px black;
     display: none;
     z-index: 11;
