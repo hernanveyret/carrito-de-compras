@@ -45,7 +45,7 @@ const articulos = [
       marca:'Jaguar',
       precio:3500,
       imagen:'img/productos/320-black.png',
-      color: 'black',
+      color: 'Black',
       idUno: '320black',
       idDos: 'id320black'
     },
@@ -57,45 +57,45 @@ const articulos = [
       marca:'Jaguar',
       precio:3500,
       imagen:'img/productos/320-blanca.png',
-      color: 'clanca',
+      color: 'Blanco',
       idUno: '320blanco',
       idDos: 'id320blanco'
     },
     {
-     id: 3,
-     articulo: 4077,
-     nInicio: 35,
-     nFinal: 44,
-     marca: 'Shadow',
-     precio: 4900,
-     imagen: 'img/productos/4077.png',
-     color: 'marron',
-     idUno: '4077marron',
-     idDos: 'id4077marron'
-    },
-    {
-      id: 4,
+      id: 3,
       articulo: 128,
       nInicio: 19,
       nFinal: 26,
       marca: 'Jaguar',
       precio: 1900,
       imagen: 'img/productos/128-rosa.png',
-      color: 'rosa',
+      color: 'Rosa',
       idUno: '128/1rosa',
       idDos: 'id128/1rosa'
     },
     {
-      id: 5,
+      id: 4,
       articulo: 128,
       nInicio: 27,
       nFinal: 33,
       marca: 'Jaguar',
       precio: 1900,
       imagen: 'img/productos/128-jean.png',
-      color: 'jean',
+      color: 'Jean',
       idUno: '128/2jean',
       idDos: 'id128/2jean'
+    },
+    {
+      id: 5,
+      articulo: 2010,
+      nInicio: 35,
+      nFinal: 40,
+      marca: 'Cromic',
+      precio: 2100,
+      imagen: 'img/productos/2010-rosa.png',
+      color: 'Rosa',
+      idUno: '2010/2rosa',
+      idDos: 'id2010/2rosa'
     },
     {
       id: 6,
@@ -104,37 +104,25 @@ const articulos = [
       nFinal: 40,
       marca: 'Cromic',
       precio: 2100,
-      imagen: 'img/productos/2010-rosa.png',
-      color: 'rosa',
-      idUno: '2010/2rosa',
-      idDos: 'id2010/2rosa'
-    },
-    {
-      id: 7,
-      articulo: 2010,
-      nInicio: 35,
-      nFinal: 40,
-      marca: 'Cromic',
-      precio: 2100,
       imagen: 'img/productos/2010-negra.png',
-      color: 'Negra',
+      color: 'Negro',
       idUno: '2010/2negra',
       IdDos: 'id2010/2negra'
     },
     {
-      id: 8,
+      id: 7,
       articulo: 1153,
       nInicio: 19,
       nFinal: 26,
       marca: 'Tridy',
       precio: 2500,
       imagen: 'img/productos/1153-blanca.png',
-      color: 'blanco',
+      color: 'Blanco',
       idUno: '1153blanca',
       idDos: 'id1153blanca'
     },
     {
-      id: 9,
+      id: 8,
       articulo: 1153,
       nInicio: 19,
       nFinal: 26,
@@ -146,6 +134,18 @@ const articulos = [
       idDos: 'id1153negra'
     },
     {
+      id: 9,
+      articulo: 4077,
+      nInicio: 35,
+      nFinal: 44,
+      marca: 'Shadow',
+      precio: 4900,
+      imagen: 'img/productos/4077.png',
+      color: 'Nagro/Marron',
+      idUno: '4077negromarron',
+      idDos: 'id4077negromarron'
+     },
+     {
       id: 10,
       articulo: 'EXTREME 01',
       nInicio:  39,
@@ -153,7 +153,7 @@ const articulos = [
       marca: 'Ringo',
       precio: '15900',
       imagen: 'img/productos/extreme01-negra.png',
-      color: 'Negra',
+      color: 'Negro',
       idUno: 'extreme01negra',
       idDos: 'idextreme01negra'
     },
@@ -180,17 +180,65 @@ const articulos = [
       color: 'Multicolor',
       idUno: '1778multicolor',
       idDos: 'id1778multicolor'
-    }
+    },
+    {
+      id: 13,
+      articulo: 25463,
+      nInicio:35,
+      nFinal:41,
+      marca:'Ipanema',
+      precio: 2800,
+      imagen:'img/productos/25463ipanemaAzFx.png',
+      color: 'Azul/Fuxcia',
+      idUno: '25463ipanemaAzFx',
+      idDos: 'id25463ipanemaAzFx'
+    },
+    {
+      id: 14,
+      articulo: 26525,
+      nInicio:35,
+      nFinal:41,
+      marca:'Ipanema',
+      precio: 2800,
+      imagen:'img/productos/26525IpanemaARo.png',
+      color: 'Azul/Rosa',
+      idUno: '26525IpanemaARosa',
+      idDos: 'id26525IpanemaARosa'
+    },
+    {
+    id: 15,
+    articulo: 404,
+    nInicio:39,
+    nFinal:45,
+    marca:'Donkey',
+    precio: 3700,
+    imagen:'img/productos/404Donkeyaz.png',
+    color: 'Azul',
+    idUno: '404Donkeyaz',
+    idDos: 'id404Donkeyaz'
+  },
+  {
+    id: 16,
+    articulo: 404,
+    nInicio:39,
+    nFinal:45,
+    marca:'Donkey',
+    precio: 3700,
+    imagen:'img/productos/404Donkeyne.png',
+    color: 'Negro',
+    idUno: '404Donkeyne',
+    idDos: 'id404Donkeyne'
+  },
 ]
 // crear las cards de cada producto
-for ( indice in articulos) {
+for ( var indice in articulos) {
   artId = articulos[indice].id;
         let html = ''
             html += `<section class="cards">`
             html += `<p class="articulo">${articulos[indice].articulo}</p>`;
             html += `<p class="marca">${articulos[indice].marca}</p>`;
             html += `<img src="${articulos[indice].imagen}" alt="Calzado ${articulos[indice].idUno}}" />`;
-            html += `<select id="${articulos[indice].idUno}" data-id="${articulos[indice].idUno}" onchange="seleccion()">`;
+            html += `<select class="selectNumero" id="${articulos[indice].idUno}" data-id="${articulos[indice].idUno}" onchange="seleccion()">`;
             html +=  ` <option>Numeracion</option>`
                             for ( let n = articulos[indice].nInicio; n <= articulos[indice].nFinal; n++) {
                         html +=  ` <option value="${n}">Nº ${n}</option>`
@@ -277,7 +325,7 @@ function mostrarCarrito(){
             htmlCarrito += `<td>${producto[m].numero}</td>`
             htmlCarrito += `<td>${producto[m].color}</td>`
             htmlCarrito += `<td>${producto[m].cantidad}</td>`
-            htmlCarrito += `<td>${producto[m].precio}</td>`
+            htmlCarrito += `<td>$ ${producto[m].precio}</td>`
             htmlCarrito += `<td><button class="btn-mas" data-btnsuma="${m}">+</button></td>`
             htmlCarrito += `<td><button class="btn-menos" data-btnresta="${m}">-</button></td>`
             htmlCarrito += `<td><button class="btn-borrar-producto" data-btnborrar="${m}">BORRAR</button></td>`
