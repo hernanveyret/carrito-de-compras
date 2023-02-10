@@ -55,8 +55,17 @@ td {
     margin-right: 40px;    
     border-bottom: 0.1rem solid;
 }
+#carritoContenedor div{
+   margin:0 auto;
+}
+@media (max-width: 800px) {
+    .carrito-Contenedor {
+        width: auto;
+    }
+}
 
 @media (max-width: 576px) {
     .carrito-Contenedor {
         width: auto;
+    }
 }
