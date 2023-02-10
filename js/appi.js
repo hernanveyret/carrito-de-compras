@@ -31,7 +31,7 @@ if ( localStorage.getItem("articulosCarrito")) {
     document.getElementById('carritoContenedor').style.borderRadius="5px";
      
       let htmlCarrito = ''
-          htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
+          htmlCarrito = `<p>TU COMPRA:</p>`
           htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7" class="tablaCarrito">`
           
           htmlCarrito += `<tr>`        

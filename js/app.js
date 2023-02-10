@@ -307,7 +307,7 @@ function mostrarCarrito(){
   document.getElementById('carritoContenedor').style.borderRadius="5px";
    
     let htmlCarrito = ''
-        htmlCarrito = `<p style="margin-left: 5px">Tu compra</p>`
+        htmlCarrito = `<p class="tuCompra">Tu compra</p>`
         htmlCarrito += `<table border="1" cellspacing="0" cellpadding="7" class="tablaCarrito">`
         
         htmlCarrito += `<tr>`        
