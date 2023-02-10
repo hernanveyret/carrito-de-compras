@@ -438,7 +438,7 @@ function mostrarCarritoVacio() {
   document.getElementById('carritoContenedor').style.display="none" 
   document.getElementById('carritoContenedor').style.display="block" 
   let htmlCarrito = ''
-      htmlCarrito += `<div style="width:20em; border: 1px solid black">`
+      htmlCarrito += `<div style="width:20em">`
       htmlCarrito += `<p style="text-align: center">TU BOLSA ESTA VACIA</p>`
       htmlCarrito += `<div class="btn-contenedor-carrito">`
             htmlCarrito += `<button data-idMas="${m}"onclick="seguirComprando()">SEGUIR COMPRANDO</button>`
