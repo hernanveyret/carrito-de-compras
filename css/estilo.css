@@ -116,6 +116,11 @@ h1 {
 p, img, select, button {
     margin-top: 2%;
 }
+.tuCompra {
+    font-weight: 700;
+    transform: scaleY(1.5);
+    margin: 8px;
+}
 button, select {
     padding: 7px;
 }
