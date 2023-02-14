@@ -44,97 +44,64 @@ const articulos = [
       nFinal:47,
       marca:'Jaguar',
       precio:3500,
-      imagen:'img/productos/320-black.png',
+      imagen:'img/productos/jaguar/320/320-black.png',
       color: 'Black',
       idUno: '320black',
-      idDos: 'id320black'
+      idDos: 'id320black',
+      otrosColores: [
+        {id: '1.1', nInicio: 34, nFinal: 47, imagen: 'img/productos/jaguar/320/320-blanca.png', color: 'Blanco',idUno:'320blanco',idDos:'id320blanco'},
+        {id: '1.2', nInicio: 34, nFinal: 47, imagen: 'img/productos/jaguar/320/320-jean.png', color: 'Jean',idUno:'320jean',idDos:'id320jean'},
+        {id: '1.3', nInicio: 34, nFinal: 47, imagen: 'img/productos/jaguar/320/320-negro.png', color: 'Negro',idUno:'320negro',idDos:'id320negro'},
+        {id: '1.4', nInicio: 34, nFinal: 47, imagen: 'img/productos/jaguar/320/320-rojo.png', color: 'Rojo',idUno:'320rojo',idDos:'id320rojo'},
+      ]
     },
     {
-      id:2,
-      articulo:320,
-      nInicio:34,
-      nFinal:47,
-      marca:'Jaguar',
-      precio:3500,
-      imagen:'img/productos/320-blanca.png',
-      color: 'Blanco',
-      idUno: '320blanco',
-      idDos: 'id320blanco'
+      id: 2,
+      articulo: 128,
+      nInicio: 19,
+      nFinal: 26,
+      marca: 'Jaguar',
+      precio: 1900,
+      imagen: 'img/productos/jaguar/128/128-rosa.png',
+      color: 'Rosa',
+      idUno: '128/1rosa',
+      idDos: 'id1281rosa',
+      otrosColores: [
+        {id: '2.1', nInicio: 19, nFinal: 26, imagen: 'img/productos/jaguar/128/128-jean.png', color: 'Jean',idUno:'128/1jean',idDos:'id1281jean'}
+      ]
     },
     {
       id: 3,
-      articulo: 128,
-      nInicio: 19,
-      nFinal: 26,
-      marca: 'Jaguar',
-      precio: 1900,
-      imagen: 'img/productos/128-rosa.png',
+      articulo: 2010,
+      nInicio: 35,
+      nFinal: 40,
+      marca: 'Cromic',
+      precio: 2100,
+      imagen: 'img/productos/cromic/2010-rosa.png',
       color: 'Rosa',
-      idUno: '128/1rosa',
-      idDos: 'id128/1rosa'
+      idUno: '2010/2rosa',
+      idDos: 'id20102rosa',
+      otrosColores: [
+        {id: '3.1', nInicio: 35, nFinal: 44, imagen: 'img/productos/cromic/2010-negro.png', color: 'Negro',idUno:'2010negro',idDos:'id2010negro'}
+      ]
     },
     {
       id: 4,
-      articulo: 128,
-      nInicio: 27,
-      nFinal: 33,
-      marca: 'Jaguar',
-      precio: 1900,
-      imagen: 'img/productos/128-jean.png',
-      color: 'Jean',
-      idUno: '128/2jean',
-      idDos: 'id128/2jean'
+      articulo: 1153,
+      nInicio: 19,
+      nFinal: 26,
+      marca: 'Tridy',
+      precio: 2500,
+      imagen: 'img/productos/tridy/1153-blanca.png',
+      color: 'Blanco',
+      idUno: '1153blanca',
+      idDos: 'id1153blanca',
+      otrosColores: [
+        {id: '4.1', nInicio: 19, nFinal: 26, imagen: 'img/productos/tridy/1153-negro.png', color: 'Negro',idUno:'1153negro',idDos:'id1153negro'}
+      ]
     },
     {
       id: 5,
-      articulo: 2010,
-      nInicio: 35,
-      nFinal: 40,
-      marca: 'Cromic',
-      precio: 2100,
-      imagen: 'img/productos/2010-rosa.png',
-      color: 'Rosa',
-      idUno: '2010/2rosa',
-      idDos: 'id2010/2rosa'
-    },
-    {
-      id: 6,
-      articulo: 2010,
-      nInicio: 35,
-      nFinal: 40,
-      marca: 'Cromic',
-      precio: 2100,
-      imagen: 'img/productos/2010-negra.png',
-      color: 'Negro',
-      idUno: '2010/2negra',
-      IdDos: 'id2010/2negra'
-    },
-    {
-      id: 7,
-      articulo: 1153,
-      nInicio: 19,
-      nFinal: 26,
-      marca: 'Tridy',
-      precio: 2500,
-      imagen: 'img/productos/1153-blanca.png',
-      color: 'Blanco',
-      idUno: '1153blanca',
-      idDos: 'id1153blanca'
-    },
-    {
-      id: 8,
-      articulo: 1153,
-      nInicio: 19,
-      nFinal: 26,
-      marca: 'Tridy',
-      precio: 2500,
-      imagen: 'img/productos/1153-negra.png',
-      color: 'Negro',
-      idUno: '1153negra',
-      idDos: 'id1153negra'
-    },
-    {
-      id: 9,
       articulo: 4077,
       nInicio: 35,
       nFinal: 44,
@@ -146,7 +113,7 @@ const articulos = [
       idDos: 'id4077negromarron'
      },
      {
-      id: 10,
+      id: 6,
       articulo: 'EXTREME 01',
       nInicio:  39,
       nFinal: 45,
@@ -158,7 +125,7 @@ const articulos = [
       idDos: 'idextreme01negra'
     },
     {
-      id: 11,
+      id: 7,
       articulo: 286,
       nInicio: 35,
       nFinal: 41,
@@ -170,7 +137,7 @@ const articulos = [
       idDos: 'id286suela'
     },
     {
-      id: 12,
+      id: 8,
       articulo: 1778,
       nInicio: 35,
       nFinal: 40,
@@ -182,7 +149,7 @@ const articulos = [
       idDos: 'id1778multicolor'
     },
     {
-      id: 13,
+      id: 9,
       articulo: 25463,
       nInicio:35,
       nFinal:41,
@@ -194,7 +161,7 @@ const articulos = [
       idDos: 'id25463ipanemaAzFx'
     },
     {
-      id: 14,
+      id: 10,
       articulo: 26525,
       nInicio:35,
       nFinal:41,
@@ -206,28 +173,19 @@ const articulos = [
       idDos: 'id26525IpanemaARosa'
     },
     {
-    id: 15,
+    id: 11,
     articulo: 404,
     nInicio:39,
     nFinal:45,
     marca:'Donkey',
     precio: 3700,
-    imagen:'img/productos/404Donkeyaz.png',
+    imagen:'img/productos/Donkey/404Donkeyaz.png',
     color: 'Azul',
     idUno: '404Donkeyaz',
-    idDos: 'id404Donkeyaz'
-  },
-  {
-    id: 16,
-    articulo: 404,
-    nInicio:39,
-    nFinal:45,
-    marca:'Donkey',
-    precio: 3700,
-    imagen:'img/productos/404Donkeyne.png',
-    color: 'Negro',
-    idUno: '404Donkeyne',
-    idDos: 'id404Donkeyne'
+    idDos: 'id404Donkeyaz',
+    otrosColores: [
+      {id: '11.1', nInicio: 39, nFinal: 45, imagen: 'img/productos/Donkey/404Donkeyne.png', color: 'Negro',idUno:'404negro',idDos:'id404negro'}
+    ]
   },
 ]
 // crear las cards de cada producto
@@ -238,29 +196,82 @@ for ( var indice in articulos) {
             html += `<p class="articulo">${articulos[indice].articulo}</p>`;
             html += `<p class="marca">${articulos[indice].marca}</p>`;
             html += `<img src="${articulos[indice].imagen}" alt="Calzado ${articulos[indice].idUno}}" />`;
+            html += `<p style="border: 1px solid grey; padding: 1px 3px;">${articulos[indice].color}</p>`;
             html += `<select class="selectNumero" id="${articulos[indice].idUno}" data-id="${articulos[indice].idUno}" onchange="seleccion()">`;
             html +=  ` <option>Numeracion</option>`
                             for ( let n = articulos[indice].nInicio; n <= articulos[indice].nFinal; n++) {
                         html +=  ` <option value="${n}">Nº ${n}</option>`
                                 }
-            html += `</select>`;
-        
+            html += `</select>`;        
             html += `<div class="signoPrecio">`          
             html += `<p>$</p>`
             html += `<p class="precio"> ${articulos[indice].precio}</p>`;
-            html += `</div>`
+            html += `</div>`;            
             html += `<button data-id="${articulos[indice].id}" class="btn">COMPRAR</button>`;
+            html += `<button data-identificador="${articulos[indice].idDos}" class="btn-verMas" style="font-size: 10px;" >VER MAS</button>`;
             html += `<span class="numberr" data-miNumero="${articulos[indice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].color}</span>`;
-        
+                         html += `</section>`       ;
+
+            // SubCards
+                    if( articulos[indice].otrosColores) {                                  
+                        for ( var subIndice in articulos[indice].otrosColores) {                              
+                      
+                       html += `<section class="subCards" id="${articulos[indice].idDos}">`
+                        html += `<p class="articulo">${articulos[indice].articulo}</p>`;
+                        html += `<p class="marca">${articulos[indice].marca}</p>`;
+                        html += `<img src="${articulos[indice].otrosColores[subIndice].imagen}" alt="Calzado ${articulos[indice].otrosColores[subIndice].idUno}" />`;
+                        html += `<p style="border: 1px solid grey; padding: 1px 3px;">${articulos[indice].otrosColores[subIndice].color}</p>`;
+                        html += `<select class="selectNumero" id="${articulos[indice].otrosColores[subIndice].idUno}" data-id="${articulos[indice].otrosColores[subIndice].idUno}" onchange="seleccion()">`;
+                        html +=  ` <option>Numeracion</option>`
+                                        for ( let n = articulos[indice].otrosColores[subIndice].nInicio; n <= articulos[indice].otrosColores[subIndice].nFinal; n++) {
+                                    html +=  ` <option value="${n}">Nº ${n}</option>`
+                                            }
+                        html += `</select>`;        
+                        html += `<div class="signoPrecio">`          
+                        html += `<p>$</p>`
+                        html += `<p class="precio"> ${articulos[indice].precio}</p>`;
+                        html += `</div>`;            
+                        html += `<button data-id="${articulos[indice].otrosColores[subIndice].id}" class="btn">COMPRAR</button>`;
+                        html += `<button data-identificador="${articulos[indice].idDos}" style="font-size: 10px;"  class="btn-verMenos">VER MENOS</button>`;
+                        html += `<span class="numberr" data-miNumero="${articulos[indice].otrosColores[subIndice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].otrosColores[subIndice].color}</span>`;
+                        html += `</section>`;
+                                    }
+                                }
+
       contenedorArticulos.innerHTML += html // muestro en pantalla los productos.
   
 // Selecciona el numero del calzado.
 function seleccion() {     
   nSeleccionado = document.getElementById(idArticulo).value;
-     
+ }
 }
 
-}
+// Funcion para mostrar y ocultar las Sub Cards
+const contenedorCards = document.querySelector('.contenedor');
+      contenedorCards.addEventListener('click', (a) => {
+        const objetoVerMas = a.target.parentElement;
+        const btnVermas = a.target.classList.contains('btn-verMas');
+        const btnVermenos = a.target.classList.contains('btn-verMenos');
+        
+              if(btnVermas === true) {
+                const idSubCards = objetoVerMas.querySelector('.btn-verMas').dataset.identificador;                
+                const grupoDeSubCards = document.querySelectorAll("#" + idSubCards);
+                  for ( let i = 0; i < grupoDeSubCards.length; i++) {
+                    grupoDeSubCards[i].style.display="flex";
+                  }
+              }
+
+              if(btnVermenos === true) {
+                const idSubCardsmenos = objetoVerMas.querySelector('.btn-verMenos').dataset.identificador;
+                const grupoDeSubCardsmenos = document.querySelectorAll("#" + idSubCardsmenos);
+                      for (let i = 0; i < grupoDeSubCardsmenos.length; i++) {
+                        grupoDeSubCardsmenos[i].style.display="none";
+                      }
+              }
+
+      })
+	
+		
 
 
 // Ingresando productos al carrito de compras
@@ -270,6 +281,7 @@ contenedor.addEventListener('click', (e) => {
   objetoSelect = e.target.parentElement;
   objetoSelectId = objetoSelect.querySelector('select').dataset.id;
   idArticulo = objetoSelectId
+
  
     clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
                                                 // con esta info puedo crear el array de objetos con el producto.
