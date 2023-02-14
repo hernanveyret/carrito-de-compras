@@ -25,6 +25,7 @@
 .btn-mas, .btn-menos {
     background-color:aqua;
     color: black;
+    width: 28px;
 }
 .btn-pagar {
     background-color: green;
