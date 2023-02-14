@@ -72,17 +72,17 @@ const articulos = [
     },
     {
       id: 3,
-      articulo: 2010,
-      nInicio: 35,
-      nFinal: 40,
-      marca: 'Cromic',
-      precio: 2100,
-      imagen: 'img/productos/cromic/2010-rosa.png',
-      color: 'Rosa',
-      idUno: '2010/2rosa',
-      idDos: 'id20102rosa',
+      articulo: 650,
+      nInicio: 20,
+      nFinal: 26,
+      marca: 'Tres',
+      precio: 2500,
+      imagen: 'img/productos/tres/650azultres.png',
+      color: 'Azul',
+      idUno: '650azul',
+      idDos: 'id650azul',
       otrosColores: [
-        {id: '3.1', nInicio: 35, nFinal: 44, imagen: 'img/productos/cromic/2010-negro.png', color: 'Negro',idUno:'2010negro',idDos:'id2010negro'}
+        {id: '3.1', nInicio: 20, nFinal: 26, imagen: 'img/productos/tres/650violetatres.png', color: 'Violeta',idUno:'650violeta',idDos:'id650violeta'}
       ]
     },
     {
@@ -150,6 +150,55 @@ const articulos = [
     },
     {
       id: 9,
+      articulo: 'P1',
+      nInicio: 19,
+      nFinal: 26,
+      marca: 'Jamaiquina',
+      precio: 2100,
+      imagen: 'img/productos/jamaiquina/p1azuljamaiquina.png',
+      color: 'Azul',
+      idUno: 'p1/1azul',
+      idDos: 'idp11azul',
+      otrosColores: [
+        {id: '9.1', nInicio: 19, nFinal: 26, imagen: 'img/productos/jamaiquina/p1fuxiajamaiquina.png', color: 'Fuxia',idUno:'p1/1fuxia',idDos:'idp11fuxia'},
+        {id: '9.2', nInicio: 19, nFinal: 26, imagen: 'img/productos/jamaiquina/p1negrojamaiquina.png', color: 'Negro',idUno:'p1/1negro',idDos:'idp1/1negro'},
+        {id: '9.3', nInicio: 19, nFinal: 26, imagen: 'img/productos/jamaiquina/p1rosajamaiquina.png', color: 'Rosa',idUno:'p1/1rosa',idDos:'idp1/1rosa'},
+      ]
+    },
+    {
+      id: 10,
+      articulo: 'P2',
+      nInicio: 27,
+      nFinal: 34,
+      marca: 'Jamaiquina',
+      precio: 2600,
+      imagen: 'img/productos/jamaiquina/p1fuxiajamaiquina.png',
+      color: 'Fuxia',
+      idUno: 'p2fuxia',
+      idDos: 'idp2fuxia',
+      otrosColores: [
+        {id: '10.1', nInicio: 27, nFinal: 34, imagen: 'img/productos/jamaiquina/p1azuljamaiquina.png', color: 'Azul',idUno:'p1azul',idDos:'idp1azul'},
+        {id: '10.2', nInicio: 27, nFinal: 34, imagen: 'img/productos/jamaiquina/p1negrojamaiquina.png', color: 'Negro',idUno:'p1negro',idDos:'idp1negro'},
+        {id: '10.3', nInicio: 27, nFinal: 34, imagen: 'img/productos/jamaiquina/p1rosajamaiquina.png', color: 'Rosa',idUno:'p1rosa',idDos:'idp1rosa'},
+      ]
+    },
+    {
+      id: 11,
+      articulo: 2010,
+      nInicio: 35,
+      nFinal: 40,
+      marca: 'Cromic',
+      precio: 2100,
+      imagen: 'img/productos/cromic/2010-rosa.png',
+      color: 'Rosa',
+      idUno: '2010/2rosa',
+      idDos: 'id20102rosa',
+      otrosColores: [
+        {id: '11.1', nInicio: 35, nFinal: 44, imagen: 'img/productos/cromic/2010-negro.png', color: 'Negro',idUno:'2010negro',idDos:'id2010negro'}
+      ]
+    },
+    {
+      id: 12,
       articulo: 25463,
       nInicio:35,
       nFinal:41,
@@ -161,7 +210,7 @@ const articulos = [
       idDos: 'id25463ipanemaAzFx'
     },
     {
-      id: 10,
+      id: 13,
       articulo: 26525,
       nInicio:35,
       nFinal:41,
@@ -173,10 +222,10 @@ const articulos = [
       idDos: 'id26525IpanemaARosa'
     },
     {
-    id: 11,
+    id: 14,
     articulo: 404,
     nInicio:39,
-    nFinal:45,
+    nFinal:46,
     marca:'Donkey',
     precio: 3700,
     imagen:'img/productos/Donkey/404Donkeyaz.png',
@@ -184,7 +233,37 @@ const articulos = [
     idUno: '404Donkeyaz',
     idDos: 'id404Donkeyaz',
     otrosColores: [
-      {id: '11.1', nInicio: 39, nFinal: 45, imagen: 'img/productos/Donkey/404Donkeyne.png', color: 'Negro',idUno:'404negro',idDos:'id404negro'}
+      {id: '14.1', nInicio: 39, nFinal: 45, imagen: 'img/productos/Donkey/404Donkeyne.png', color: 'Negro',idUno:'404negro',idDos:'id404negro'}
+    ]
+  },
+  {
+    id: 15,
+    articulo: 6700,
+    nInicio: 35,
+    nFinal: 40,
+    marca: 'Proforce',
+    precio: 4500,
+    imagen: 'img/productos/proforce/6700negroproforce.png',
+    color: 'Negro',
+    idUno: '6700negro',
+    idDos: 'id6700negro',
+    otrosColores: [
+      {id: '15.1', nInicio: 35, nFinal: 40, imagen: 'img/productos/proforce/6700azulproforce.png', color: 'Azul',idUno:'6700azul',idDos:'id6700azul'}
+    ]
+  },
+  {
+    id: 16,
+    articulo: 1023,
+    nInicio: 35,
+    nFinal: 44,
+    marca: 'Action Team',
+    precio: 4500,
+    imagen: 'img/productos/action/1023negroaction.png',
+    color: 'Negro',
+    idUno: '1023negro',
+    idDos: 'id1023negro',
+    otrosColores: [
+      {id: '16.1', nInicio: 35, nFinal: 44, imagen: 'img/productos/action/1023azulaction.png', color: 'Azul',idUno:'1023azul',idDos:'id1023azul'}
     ]
   },
 ]
