@@ -94,7 +94,7 @@ h1 {
     border: 2px solid white;
     box-shadow: 1px 1px 9px black;
     width: 15%;
-    height: auto;
+    height: 20em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -205,6 +205,10 @@ footer {
     .signoPrecio {
         font-size: 14px;
     }
+    .cards, .subCards {
+        width: 25%;
+        height: 20em;
+    }
 }
 
 @media (max-width: 576px) {
@@ -213,6 +217,7 @@ footer {
     }
     .cards, .subCards {
         width: 80%;
+        height: 26em;
     }
     .selectNumero {
         width: 35%;
