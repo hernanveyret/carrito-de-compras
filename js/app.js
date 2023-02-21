@@ -17,7 +17,7 @@ let importeRestar = 0;
 let productosPersistentes;
 let clickObjeto;
     let sumar = 0;
-const producto = [];
+const producto = [];  // Array donde ingresan los productos seleccionados
 
 // Ve si hay productos en el localStorage y los agrega al carrito
 if ( localStorage.getItem("articulosCarrito")) {
@@ -36,6 +36,14 @@ if ( localStorage.getItem("articulosCarrito")) {
   
 
 // La base de datos va a salir de un Json en forma de arrays de datos o desde un js.
+// tomar informacion de Json.
+fetch('js/baseDeDatos.json').then(response =>{ 
+  return response.json();   
+      }).then(articulos => {            // pone la informacion en la variable articulos  
+        crearCards(articulos)           // llama a la funcion donde crea las cards
+      }) 
+
+/*
 const articulos = [
     {
       id:1,
@@ -298,65 +306,67 @@ const articulos = [
     ]
   },
 ]
+*/
 
 // crear las cards de cada producto
-for ( var indice in articulos) {
-  artId = articulos[indice].id;
-        let html = ''
-            html += `<section class="cards">`
-            html += `<p class="articulo">${articulos[indice].articulo}</p>`;
-            html += `<p class="marca">${articulos[indice].marca}</p>`;
-            html += `<img src="${articulos[indice].imagen}" alt="Calzado ${articulos[indice].idUno}}" />`;
-            html += `<p style="border: 1px solid grey; padding: 1px 3px;">${articulos[indice].color}</p>`;
-            html += `<select class="selectNumero" id="${articulos[indice].idUno}" data-id="${articulos[indice].idUno}" onchange="seleccion()">`;
-            html +=  ` <option>Numeracion</option>`
-                            for ( let n = articulos[indice].nInicio; n <= articulos[indice].nFinal; n++) {
-                                  html +=  ` <option value="${n}">Nº ${n}</option>`
-                                }
-            html += `</select>`;        
-            html += `<div class="signoPrecio">`          
-            html += `<p>$</p>`
-            html += `<p class="precio"> ${articulos[indice].precio}</p>`;
-            html += `</div>`;            
-            html += `<button data-id="${articulos[indice].id}" class="btn">COMPRAR</button>`;
-                                if ( articulos[indice].otrosColores) { 
-              html += `<button data-identificador="${articulos[indice].idDos}" class="btn-verMas" style="font-size: 10px;" >VER MAS</button>`;
-                                }            
-            html += `<span class="numberr" data-miNumero="${articulos[indice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].color}</span>`;
-                         html += `</section>`       ;
-
-            // SubCards
-                    if( articulos[indice].otrosColores) {                                  
-                        for ( var subIndice in articulos[indice].otrosColores) {                              
-                      
-                       html += `<section class="subCards" id="${articulos[indice].idDos}">`
-                        html += `<p class="articulo">${articulos[indice].articulo}</p>`;
-                        html += `<p class="marca">${articulos[indice].marca}</p>`;
-                        html += `<img src="${articulos[indice].otrosColores[subIndice].imagen}" alt="Calzado ${articulos[indice].otrosColores[subIndice].idUno}" />`;
-                        html += `<p style="border: 1px solid grey; padding: 1px 3px;">${articulos[indice].otrosColores[subIndice].color}</p>`;
-                        html += `<select class="selectNumero" id="${articulos[indice].otrosColores[subIndice].idUno}" data-id="${articulos[indice].otrosColores[subIndice].idUno}" onchange="seleccion()">`;
-                        html +=  ` <option>Numeracion</option>`
-                                        for ( let n = articulos[indice].otrosColores[subIndice].nInicio; n <= articulos[indice].otrosColores[subIndice].nFinal; n++) {
-                                    html +=  ` <option value="${n}">Nº ${n}</option>`
-                                            }
-                        html += `</select>`;        
-                        html += `<div class="signoPrecio">`          
-                        html += `<p>$</p>`
-                        html += `<p class="precio"> ${articulos[indice].precio}</p>`;
-                        html += `</div>`;            
-                        html += `<button data-id="${articulos[indice].otrosColores[subIndice].id}" class="btn">COMPRAR</button>`;
-                        html += `<button data-identificador="${articulos[indice].idDos}" style="font-size: 10px;"  class="btn-verMenos">VER MENOS</button>`;
-                        html += `<span class="numberr" data-miNumero="${articulos[indice].otrosColores[subIndice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].otrosColores[subIndice].color}</span>`;
-                        html += `</section>`;
+function crearCards(articulos) {
+    for ( var indice in articulos) {
+      artId = articulos[indice].id;
+            let html = ''
+                html += `<section class="cards">`
+                html += `<p class="articulo">${articulos[indice].articulo}</p>`;
+                html += `<p class="marca">${articulos[indice].marca}</p>`;
+                html += `<img src="${articulos[indice].imagen}" alt="Calzado ${articulos[indice].idUno}}" />`;
+                html += `<p style="border: 1px solid grey; padding: 1px 3px;">${articulos[indice].color}</p>`;
+                html += `<select class="selectNumero" id="${articulos[indice].idUno}" data-id="${articulos[indice].idUno}" onchange="seleccion()">`;
+                html +=  ` <option>Numeracion</option>`
+                                for ( let n = articulos[indice].nInicio; n <= articulos[indice].nFinal; n++) {
+                                      html +=  ` <option value="${n}">Nº ${n}</option>`
                                     }
-                                }
+                html += `</select>`;        
+                html += `<div class="signoPrecio">`          
+                html += `<p>$</p>`
+                html += `<p class="precio"> ${articulos[indice].precio}</p>`;
+                html += `</div>`;            
+                html += `<button data-id="${articulos[indice].id}" class="btn">COMPRAR</button>`;
+                                    if ( articulos[indice].otrosColores) { 
+                  html += `<button data-identificador="${articulos[indice].idDos}" class="btn-verMas" style="font-size: 10px;" >VER MAS</button>`;
+                                    }            
+                html += `<span class="numberr" data-miNumero="${articulos[indice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].color}</span>`;
+                            html += `</section>`       ;
 
-      contenedorArticulos.innerHTML += html // muestro en pantalla los productos.
-  
+                // SubCards
+                        if( articulos[indice].otrosColores) {                                  
+                            for ( var subIndice in articulos[indice].otrosColores) {                              
+                          
+                          html += `<section class="subCards" id="${articulos[indice].idDos}">`
+                            html += `<p class="articulo">${articulos[indice].articulo}</p>`;
+                            html += `<p class="marca">${articulos[indice].marca}</p>`;
+                            html += `<img src="${articulos[indice].otrosColores[subIndice].imagen}" alt="Calzado ${articulos[indice].otrosColores[subIndice].idUno}" />`;
+                            html += `<p style="border: 1px solid grey; padding: 1px 3px;">${articulos[indice].otrosColores[subIndice].color}</p>`;
+                            html += `<select class="selectNumero" id="${articulos[indice].otrosColores[subIndice].idUno}" data-id="${articulos[indice].otrosColores[subIndice].idUno}" onchange="seleccion()">`;
+                            html +=  ` <option>Numeracion</option>`
+                                            for ( let n = articulos[indice].otrosColores[subIndice].nInicio; n <= articulos[indice].otrosColores[subIndice].nFinal; n++) {
+                                        html +=  ` <option value="${n}">Nº ${n}</option>`
+                                                }
+                            html += `</select>`;        
+                            html += `<div class="signoPrecio">`          
+                            html += `<p>$</p>`
+                            html += `<p class="precio"> ${articulos[indice].precio}</p>`;
+                            html += `</div>`;            
+                            html += `<button data-id="${articulos[indice].otrosColores[subIndice].id}" class="btn">COMPRAR</button>`;
+                            html += `<button data-identificador="${articulos[indice].idDos}" style="font-size: 10px;"  class="btn-verMenos">VER MENOS</button>`;
+                            html += `<span class="numberr" data-miNumero="${articulos[indice].otrosColores[subIndice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].otrosColores[subIndice].color}</span>`;
+                            html += `</section>`;
+                                        }
+                                    }
+
+          contenedorArticulos.innerHTML += html // muestro en pantalla los productos. 
+  }
+}
 // Selecciona el numero del calzado.
-function seleccion() {     
+function seleccion() {
   nSeleccionado = document.getElementById(idArticulo).value;
- }
 }
 
 // Funcion para mostrar y ocultar las Sub Cards
@@ -394,7 +404,7 @@ contenedor.addEventListener('click', (e) => {
   objetoSelect = e.target.parentElement;
   objetoSelectId = objetoSelect.querySelector('select').dataset.id;
   idArticulo = objetoSelectId
-
+  
  
     clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
                                                 // con esta info puedo crear el array de objetos con el producto.
