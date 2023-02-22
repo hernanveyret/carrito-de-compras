@@ -20,3 +20,5 @@ Pagina de venta de calzados / carrito de compras / practicando lo aprendido / ap
 08/02/2023: 1) Subi la parte de inicio, arregle algunos botones que andaban mal y estoy modificando laestructura de la muestra de productos con algo que se me ocurrio.
 
 09/02/2023 1) Cambie la forma de ver las imagenes del catalogo.
+22/02/2023 1) modifique la base de datos de un array en un js a un archivo JSON-
+           2) Estoy agregando listas dinamicas por marca, seguramente agregue por color o por genero, por eso no subi mas actualizaciones.
