@@ -39,3 +39,15 @@ fetch('js/baseDeDatos.json').then(response =>{
   
             }
 })
+
+// Seleccionar articulos por categoria
+const selectorCategorias = document.querySelector('.cardsCategorias');
+      selectorCategorias.addEventListener('click', (e) => {
+      const objetoCategorias = e.target.parentElement;
+      const btnCategorias = e.target.classList.contains('imgGenero');
+            if (btnCategorias) {
+              let miCategoria = objetoCategorias.querySelector('.caption').dataset.categoria;
+              localStorage.setItem('miCategoria', miCategoria);
+              location.href="carritoPorCategoria.html";
+            }
+    })
