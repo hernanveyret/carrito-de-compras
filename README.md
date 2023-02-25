@@ -22,3 +22,6 @@ Pagina de venta de calzados / carrito de compras / practicando lo aprendido / ap
 09/02/2023 1) Cambie la forma de ver las imagenes del catalogo.
 22/02/2023 1) modifique la base de datos de un array en un js a un archivo JSON-
            2) Estoy agregando listas dinamicas por marca, seguramente agregue por color o por genero, por eso no subi mas actualizaciones.
+          
+25/02/2023 1) Finalice la lista por marcas dinamica, si se agrega un articulo nuevo, la marca se agrega a la lista automaticamente, y cuando se selecciona, muestra los                 productos de esa marca.
+           2) Agregue un menu en el inicio de seleccion por categorias NIÑOS/DAMA/HOMBRE/COLEGIAL. Me falta programar colegial. Queda dinamico, si se agrega un producto               a la base de datos, automaticamente se ordena.
