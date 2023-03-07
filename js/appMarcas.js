@@ -70,7 +70,9 @@ fetch('js/base.json').then(response =>{
                 html += `<button data-id="${articulos[indice].id}" class="btn">COMPRAR</button>`;
                                     if ( articulos[indice].otrosColores) { 
                   html += `<button data-identificador="${articulos[indice].idDos}" class="btn-verMas" style="font-size: 10px;" >VER MAS</button>`;
-                                    }            
+                                    }else {
+                                      html += `<p style="color:white; padding: 6px 0px">.</p>`;
+                                    }                        
                 html += `<span class="numberr" data-miNumero="${articulos[indice].idDos}" id="nSeleccion">Nº</span><span class="color" id="color">${articulos[indice].color}</span>`;
                             html += `</section>`       ;
 
@@ -335,25 +337,4 @@ function mostrarCarritoVacio() {
     function cerrarPestaña(){
         document.querySelector('.avisoDeCompra').style.display="none";
         }
-// Lupa
-const contenedorLupa = document.querySelector('.contenedor');
-      contenedorLupa.addEventListener('click',(l) => {
-      const objetoSelectLupa = l.target.parentElement;
-      const btnLupa = l.target.classList.contains('lupa')
-      if(btnLupa) {
-        const idLupa = objetoSelectLupa.querySelector('img').dataset.lupa;
-        llamarLupa(idLupa);
-        
-      }
-      })
-
-// Cerrar Ventana de lupa
-function cerrarVentanaLupa() {
-  document.getElementById('lupaVentana').style.display="none";
-}
-
-function llamarLupa(idLupa) {
-  
-  document.getElementById('lupaVentana').style.display="flex";
-  document.getElementById('lupaImagen').innerHTML = `<img src="./${idLupa}" alt="Imagen calzado" style="width: 100%"/>`
-}
+       
