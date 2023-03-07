@@ -1,7 +1,7 @@
 const productosMenu = [];
 
 // tomar informacion de Json.
-fetch('js/baseDeDatos.json').then(response =>{ 
+fetch('js/base.json').then(response =>{ 
   return response.json();   
       }).then(articulos => {            // pone la informacion en la variable articulos  
         for ( let i in articulos) {                 // recorro el array de objetos

@@ -1,0 +1,483 @@
+[
+    {
+        "id":1,
+        "articulo":"525/1",
+        "nInicio":21,
+        "nFinal":26,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/525eygnegro.webp",
+        "color": "Negro",
+        "idUno": "5251negro",
+        "idDos": "id5251negro",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "1.1", "nInicio": 21, "nFinal": 26, "imagen": "img/productos/niños/e&g/525eygblanco.webp", "color": "Blanco","idUno":"5251blanco","idDos":"id5251blanco"}
+         ]
+      },
+      {
+        "id":2,
+        "articulo":"525/2",
+        "nInicio":27,
+        "nFinal":36,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/525eygblanco.webp",
+        "color": "Blanco",
+        "idUno": "5252blanco",
+        "idDos": "id5252blanco",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "2.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/525eygnegro.webp", "color": "Negro","idUno":"525/2negro","idDos":"id5252negro"}
+         ]
+      },
+      {
+        "id":3,
+        "articulo":280,
+        "nInicio":23,
+        "nFinal":26,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/280eyglila.webp",
+        "color": "Lila",
+        "idUno": "280eyglila",
+        "idDos": "id280eyglila",
+        "categoria": "niños"        
+      },
+      {
+        "id":4,
+        "articulo":270,
+        "nInicio":22,
+        "nFinal":26,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/270eygrosa.webp",
+        "color": "Rosa",
+        "idUno": "270eygrosa",
+        "idDos": "id270eygrosa",
+        "categoria": "niños"        
+      },
+      {
+        "id":5,
+        "articulo":"500/1",
+        "nInicio":21,
+        "nFinal":26,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/500eygblanco.webp",
+        "color": "Blanco",
+        "idUno": "5001eygblanco",
+        "idDos": "id5001eygblanco",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "5.1", "nInicio": 21, "nFinal": 26, "imagen": "img/productos/niños/e&g/500eygnegro.webp", "color": "Negro","idUno":"500/1eygnegro","idDos":"id5001eygnegro"}
+         ]
+      },
+      {
+        "id":6,
+        "articulo":"500/2",
+        "nInicio":27,
+        "nFinal":36,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/500eygnegro.webp",
+        "color": "Negro",
+        "idUno": "5002eygnegro",
+        "idDos": "id5002eygnegro",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "6.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/500eygblanco.webp", "color": "Blanco","idUno":"500/2eygnegro","idDos":"id5002eygnegro"}
+         ]
+      },
+      {
+        "id":7,
+        "articulo":"590/1",
+        "nInicio":21,
+        "nFinal":26,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/590eygnegro.webp",
+        "color": "Negro",
+        "idUno": "5901eygnegro",
+        "idDos": "id5901eygnegro",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "7.1", "nInicio": 21, "nFinal": 26, "imagen": "img/productos/niños/e&g/590eygplata.webp", "color": "Plata","idUno":"5901eygplata","idDos":"id5901eygplata"}
+         ]
+      },
+      {
+        "id":8,
+        "articulo":"590/2",
+        "nInicio":27,
+        "nFinal":36,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/590eygplata.webp",
+        "color": "Plata",
+        "idUno": "5902eygplata",
+        "idDos": "id5902eygplata",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "8.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/590eygnegro.webp", "color": "Negro","idUno":"5902negro","idDos":"id5902negro"}
+         ]
+      },
+      {
+        "id":9,
+        "articulo":540,
+        "nInicio":27,
+        "nFinal":36,
+        "marca":"E&G",
+        "precio":3500,
+        "imagen":"img/productos/niños/e&g/540eygnegro.webp",
+        "color": "Negro",
+        "idUno": "540eygnegro",
+        "idDos": "id5540eygnegro",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "9.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/540eygblanco.webp", "color": "Blanco","idUno":"540eygblanco","idDos":"id540eygblanco"}
+         ]
+      },
+      {
+        "id":10,
+        "articulo":306,
+        "nInicio":27,
+        "nFinal":34,
+        "marca":"Blink",
+        "precio":3500,
+        "imagen":"img/productos/niños/blink/360blinknegro.webp",
+        "color": "Negro",
+        "idUno": "306blinknegro",
+        "idDos": "id306blinknegro",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "10.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/blink/306blinkgris.webp", "color": "Gris","idUno":"306blinkgris","idDos":"id306blinkgris"}
+         ]
+      },
+      {
+        "id":11,
+        "articulo":323,
+        "nInicio":27,
+        "nFinal":37,
+        "marca":"Blink",
+        "precio":3500,
+        "imagen":"img/productos/niños/blink/323blinkblanco.webp",
+        "color": "Blanco",
+        "idUno": "323blinkblanco",
+        "idDos": "id323blinkblanco",
+        "categoria": "niños",
+        "otrosColores": [          
+          {"id": "11.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/niños/blink/323blinkceleste.webp", "color": "Celeste","idUno":"323blinkbceleste","idDos":"id323blinkbceleste"},
+          {"id": "11.2", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/niños/blink/323blinkazul.webp", "color": "Azul","idUno":"323blinkbazul","idDos":"id323blinkbazul"},
+          {"id": "11.3", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/niños/blink/323blinknegro.webp", "color": "Negro","idUno":"323blinkbnegro","idDos":"id323blinkbnegro"},
+          {"id": "11.4", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/niños/blink/323blinknegroblanco.webp", "color": "Negro/Blanco","idUno":"323blinkbnegroblanco","idDos":"id323blinkbnegroblanco"}
+         ]
+      },
+      {
+        "id":12,
+        "articulo":"L1",
+        "nInicio":19,
+        "nFinal":26,
+        "marca":"Jamaiquina",
+        "precio":3500,
+        "imagen":"img/productos/niños/jamaiquina/l1l2jamaiquinaazul.webp",
+        "color": "Azul",
+        "idUno": "l1jamaiquinaazul",
+        "idDos": "idl1jamaiquinaazul",
+        "categoria": "niños",
+        "otrosColores": [          
+          {"id": "12.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinarosa.webp", "color": "Rosa","idUno":"l1jamaiquinarosa","idDos":"l1jamaiquinarosa"},
+          {"id": "12.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinanegro.webp", "color": "Negro","idUno":"l1jamaiquinanegro","idDos":"idl1jamaiquinanegro"}
+            ]
+      },
+      {
+        "id":13,
+        "articulo":"L2",
+        "nInicio":27,
+        "nFinal":34,
+        "marca":"Jamaiquina",
+        "precio":3500,
+        "imagen":"img/productos/niños/jamaiquina/l1l2jamaiquinarosa.webp",
+        "color": "Rosa",
+        "idUno": "l2jamaiquinarosa",
+        "idDos": "idl2jamaiquinarosa",
+        "categoria": "niños",
+        "otrosColores": [          
+          {"id": "13.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinaazul.webp", "color": "Azul","idUno":"l1jamaiquinaazul","idDos":"l1jamaiquinaazul"},
+          {"id": "13.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinanegro.webp", "color": "Negro","idUno":"l1jamaiquinanegro","idDos":"idl1jamaiquinanegro"}
+            ]
+      },
+      {
+        "id": 14,
+        "articulo": "P1",
+        "nInicio": 19,
+        "nFinal": 26,
+        "marca": "Jamaiquina",
+        "precio": 2100,
+        "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp",
+        "color": "Azul",
+        "idUno": "p1/1azul",
+        "idDos": "idp11azul",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "14.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp", "color": "Fuxia","idUno":"p1/1fuxia","idDos":"idp11fuxia"},
+          {"id": "14.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p1/1negro","idDos":"idp1/1negro"},
+          {"id": "14.3", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1rosajamaiquina.webp", "color": "Rosa","idUno":"p1/1rosa","idDos":"idp1/1rosa"}
+        ]
+      },
+      {
+        "id": 15,
+        "articulo": "P2",
+        "nInicio": 27,
+        "nFinal": 34,
+        "marca": "Jamaiquina",
+        "precio": 2600,
+        "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp",
+        "color": "Fuxia",
+        "idUno": "p2fuxia",
+        "idDos": "idp2fuxia",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "15.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp", "color": "Azul","idUno":"p2azul","idDos":"idp2azul"},
+          {"id": "15.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p2negro","idDos":"idp2negro"},
+          {"id": "15.3", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1rosajamaiquina.webp", "color": "Rosa","idUno":"p2rosa","idDos":"idp2rosa"}
+        ]
+      },
+      {
+        "id": 16,
+        "articulo": "016",
+        "nInicio": 21,
+        "nFinal": 34,
+        "marca": "Action",
+        "precio": 2600,
+        "imagen": "img/productos/niños/action/016actionverde.webp",
+        "color": "Verde",
+        "idUno": "016actionverde",
+        "idDos": "id016actionverde",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "16.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/action/016actionrosa.webp", "color": "Rosa","idUno":"016actionrosa","idDos":"id016actionrosa"},
+          {"id": "16.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/action/016actionazul.webp", "color": "Azul","idUno":"016actionazul","idDos":"id016actionazul"}
+        ]
+      },
+      {
+        "id": 17,
+        "articulo": "50",
+        "nInicio": 21,
+        "nFinal": 30,
+        "marca": "Action",
+        "precio": 2600,
+        "imagen": "img/productos/niños/tres/50tresarana.webp",
+        "color": "Araña",
+        "idUno": "50tresarana",
+        "idDos": "id50tresarana",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "17.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tres/50tresnegro.webp", "color": "Negro","idUno":"50tresnegro","idDos":"id050tresnegro"},
+          {"id": "17.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tres/50tresrosa.webp", "color": "Rosa","idUno":"50tresrosa","idDos":"id50tresrosa"}
+        ]
+      },
+      {
+        "id": 18,
+        "articulo": 6002,
+        "nInicio": 23,
+        "nFinal": 34,
+        "marca": "Proforce",
+        "precio": 2600,
+        "imagen": "img/productos/niños/proforce/6002proforceazul.webp",
+        "color": "Azul",
+        "idUno": "6002proforceazul",
+        "idDos": "id6002proforceazul",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "18.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/proforce/6002proforcerosa.webp", "color": "Rosa","idUno":"6002proforecrosa","idDos":"id06002proforcerosa"}
+         ]
+      },
+      {
+        "id": 19,
+        "articulo": 6001,
+        "nInicio": 23,
+        "nFinal": 34,
+        "marca": "Proforce",
+        "precio": 2600,
+        "imagen": "img/productos/niños/proforce/6001proforcenaves.webp",
+        "color": "Azul/Naves",
+        "idUno": "6001proforcenaves",
+        "idDos": "id6001proforcenaves",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "19.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/proforce/6001proforcecorazones.webp", "color": "Rosa/Corazon","idUno":"6001proforcecorazones","idDos":"id06001proforcecorazones"}
+         ]
+      },
+      {
+        "id": 20,
+        "articulo": "132",
+        "nInicio": 18,
+        "nFinal": 23,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/132heydayrosa.webp",
+        "color": "Rosa",
+        "idUno": "132heydayrosa",
+        "idDos": "id132heydayrosa",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "20.1", "nInicio": 18, "nFinal": 23, "imagen": "img/productos/niños/heyday/132heydayazul.webp", "color": "Azul","idUno":"132heydayazul","idDos":"id132heydayazul"},
+          {"id": "20.2", "nInicio": 18, "nFinal": 23, "imagen": "img/productos/niños/heyday/132heydaynegro.webp", "color": "Negro","idUno":"132heydaynegro","idDos":"id132heydaynegro"}
+         ]
+      },
+      {
+        "id": 21,
+        "articulo": "007",
+        "nInicio": 23,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/007heydaychoco.webp",
+        "color": "Negro/Choco",
+        "idUno": "007heydaychoco",
+        "idDos": "id007heydaychoco",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "21.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/007heydaynegro.webp", "color": "Negro","idUno":"007heydaynegro","idDos":"id007heydaynegro"}
+         ]
+      },
+      {
+        "id": 22,
+        "articulo": "174",
+        "nInicio": 18,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/174heydaynegrorosa.webp",
+        "color": "Negro",
+        "idUno": "174heydaynegrorosa",
+        "idDos": "174heydaynegrorosa",
+        "categoria": "niños"        
+      },
+      {
+        "id": 23,
+        "articulo": "174",
+        "nInicio": 31,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/174heydaynegrorosa.webp",
+        "color": "Rosa",
+        "idUno": "174heydayrosa",
+        "idDos": "174heydayrosa",
+        "categoria": "niños"        
+      },
+      {
+        "id": 24,
+        "articulo": "000",
+        "nInicio": 23,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/000heydayrosa.webp",
+        "color": "Rosa",
+        "idUno": "000heydayrosa",
+        "idDos": "id000heydayrosa",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "24.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/000heydayazul.webp", "color": "Azul","idUno":"000heydayazul","idDos":"id000heydayazul"},
+          {"id": "24.2", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/000heydaynegro.webp", "color": "Negro","idUno":"000heydaynegro","idDos":"id000heydaynegro"}
+         ]
+      },
+      {
+        "id": 25,
+        "articulo": "173/1",
+        "nInicio": 18,
+        "nFinal": 22,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/173heydaynegroverde.webp",
+        "color": "Verde",
+        "idUno": "1731heydaynegroverde",
+        "idDos": "id1731heydaynegroverde",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "25.1", "nInicio": 18, "nFinal": 22, "imagen": "img/productos/niños/heyday/173heydaynegrochoco.webp", "color": "Negro","idUno":"1731heydaynegrochoco","idDos":"id1731heydaynegrochoco"}       
+         ]
+      },
+      {
+        "id": 26,
+        "articulo": "173/2",
+        "nInicio": 30,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/173heydaynegroverde.webp",
+        "color": "Verde",
+        "idUno": "1732heydaynegroverde",
+        "idDos": "id1732heydaynegroverde",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "26.1", "nInicio": 30, "nFinal": 36, "imagen": "img/productos/niños/heyday/173heydaynegrochoco.webp", "color": "Negro","idUno":"1732heydaynegrochoco","idDos":"id1732heydaynegrochoco"}       
+         ]
+      },
+      {
+        "id": 27,
+        "articulo": "173",
+        "nInicio": 18,
+        "nFinal": 29,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/173heydaynegrochoco.webp",
+        "color": "Negro/Choco",
+        "idUno": "173heydaynegrochoco",
+        "idDos": "id173heydaynegrochoco",
+        "categoria": "niños"        
+      },
+      {
+        "id": 28,
+        "articulo": "014",
+        "nInicio": 23,
+        "nFinal": 26,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/014heydayazul.webp",
+        "color": "Azul",
+        "idUno": "014heydayazul",
+        "idDos": "id014heydayazul",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "28.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/niños/heyday/014heydaynegro.webp", "color": "Negro","idUno":"014heydaynegro","idDos":"id014heydaynegro"}       
+         ]
+      },
+      {
+        "id": 29,
+        "articulo": "165",
+        "nInicio": 23,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/165heydayrosa.webp",
+        "color": "Rosa",
+        "idUno": "165heydayrosa",
+        "idDos": "id165heydayrosa",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "29.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/165heydayrosa.webp", "color": "Azul","idUno":"165heydayazul","idDos":"id165heydayazul"},
+          {"id": "29.2", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/165heydayrosa.webp", "color": "Negro","idUno":"165heydaynegro","idDos":"id165heydaynegro"}
+         ]
+      },
+      {
+        "id": 30,
+        "articulo": "170",
+        "nInicio": 23,
+        "nFinal": 36,
+        "marca": "Hey Day",
+        "precio": 2600,
+        "imagen": "img/productos/niños/heyday/170heydayazul.webp",
+        "color": "Azul",
+        "idUno": "170heydayazul",
+        "idDos": "id170heydayazul",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "30.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/170heydaygris.webp", "color": "Verde","idUno":"170heydaygris","idDos":"id170heydaygris"}       
+         ]
+      }
+
+      
+]

@@ -41,7 +41,7 @@ let categoria = localStorage.getItem('miCategoria');   // tomo la marca que se e
         
 
 // tomar informacion de Json.
-fetch('js/baseDeDatos.json').then(response =>{ 
+fetch('js/base.json').then(response =>{ 
     return response.json();   
 }).then(articulos => {            // pone la informacion en la variable articulos  
 
@@ -70,6 +70,9 @@ fetch('js/baseDeDatos.json').then(response =>{
                 artId = articulos[indice].id;
             let html = ''
                 html += `<section class="cards">`
+                html += `<div class="contenedorLupa">`;
+                html += `<img class="lupa" src="img/imagenes/lupa.png" alt="Lupa" data-lupa="${articulos[indice].imagen}"/>`;
+                html += `</div>`;
                 html += `<p class="articulo">${articulos[indice].articulo}</p>`;
                 html += `<p class="marca">${articulos[indice].marca}</p>`;
                 html += `<img src="${articulos[indice].imagen}" alt="Calzado ${articulos[indice].idUno}}" />`;
@@ -96,6 +99,9 @@ fetch('js/baseDeDatos.json').then(response =>{
                             for ( var subIndice in articulos[indice].otrosColores) {                              
                           
                           html += `<section class="subCards" id="${articulos[indice].idDos}">`
+                          html += `<div class="contenedorLupa">`;
+                          html += `<img class="lupa" src="img/imagenes/lupa.png" alt="Lupa" data-lupa="${articulos[indice].imagen}"/>`;
+                          html += `</div>`;
                             html += `<p class="articulo">${articulos[indice].articulo}</p>`;
                             html += `<p class="marca">${articulos[indice].marca}</p>`;
                             html += `<img src="${articulos[indice].otrosColores[subIndice].imagen}" alt="Calzado ${articulos[indice].otrosColores[subIndice].idUno}" />`;
@@ -137,9 +143,11 @@ const contenedor = document.querySelector('.contenedor');
 contenedor.addEventListener('click', (e) => {
 
   objetoSelect = e.target.parentElement;
+  const btnSelect = e.target.classList.contains('selectNumero');
+  if(btnSelect) {
   objetoSelectId = objetoSelect.querySelector('select').dataset.id;
   idArticulo = objetoSelectId
-  
+  }
  
     clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
                                                 // con esta info puedo crear el array de objetos con el producto.
@@ -348,3 +356,26 @@ function mostrarCarritoVacio() {
     function cerrarPestaña(){
         document.querySelector('.avisoDeCompra').style.display="none";
         }
+
+// Lupa
+const contenedorLupa = document.querySelector('.contenedor');
+      contenedorLupa.addEventListener('click',(l) => {
+      const objetoSelectLupa = l.target.parentElement;
+      const btnLupa = l.target.classList.contains('lupa')
+      if(btnLupa) {
+        const idLupa = objetoSelectLupa.querySelector('img').dataset.lupa;
+        llamarLupa(idLupa);
+        
+      }
+      })
+
+function llamarLupa(idLupa) {
+ 
+  document.getElementById('lupaVentana').style.display="flex";
+  document.getElementById('lupaImagen').innerHTML = `<img src="./${idLupa}" alt="Imagen calzado" style="width: 100%"/>`
+}
+
+// Cerrar Ventana de lupa
+function cerrarVentanaLupa() {
+  document.getElementById('lupaVentana').style.display="none";
+}

@@ -34,10 +34,8 @@ if ( localStorage.getItem("articulosCarrito")) {
   }   
   cantidadProductos.innerHTML = cantidadDeProductos
   
-
-// La base de datos va a salir de un Json en forma de arrays de datos o desde un js.
 // tomar informacion de Json.
-fetch('js/baseDeDatos.json').then(response =>{ 
+fetch('js/base.json').then(response =>{ 
   return response.json();   
       }).then(articulos => {            // pone la informacion en la variable articulos  
         crearCards(articulos)           // llama a la funcion donde crea las cards
@@ -49,7 +47,10 @@ function crearCards(articulos) {
     for ( var indice in articulos) {
       artId = articulos[indice].id;
             let html = ''
-                html += `<section class="cards">`
+                html += `<section class="cards">`;
+                html += `<div class="contenedorLupa">`;
+                html += `<img class="lupa" src="img/imagenes/lupa.png" alt="Lupa" data-lupa="${articulos[indice].imagen}"/>`;
+                html += `</div>`;
                 html += `<p class="articulo">${articulos[indice].articulo}</p>`;
                 html += `<p class="marca">${articulos[indice].marca}</p>`;
                 html += `<img src="${articulos[indice].imagen}" alt="Calzado ${articulos[indice].idUno}}" />`;
@@ -76,6 +77,9 @@ function crearCards(articulos) {
                             for ( var subIndice in articulos[indice].otrosColores) {                              
                           
                           html += `<section class="subCards" id="${articulos[indice].idDos}">`
+                            html += `<div class="contenedorLupa">`;
+                            html += `<img class="lupa" src="img/imagenes/lupa.png" alt="Lupa" data-lupa="${articulos[indice].otrosColores[subIndice].imagen}" />`;
+                            html += `</div>`;
                             html += `<p class="articulo">${articulos[indice].articulo}</p>`;
                             html += `<p class="marca">${articulos[indice].marca}</p>`;
                             html += `<img src="${articulos[indice].otrosColores[subIndice].imagen}" alt="Calzado ${articulos[indice].otrosColores[subIndice].idUno}" />`;
@@ -113,7 +117,7 @@ const contenedorCards = document.querySelector('.contenedor');
         const btnVermenos = a.target.classList.contains('btn-verMenos');
         
               if(btnVermas === true) {
-                const idSubCards = objetoVerMas.querySelector('.btn-verMas').dataset.identificador;                
+                const idSubCards = objetoVerMas.querySelector('.btn-verMas').dataset.identificador;
                 const grupoDeSubCards = document.querySelectorAll("#" + idSubCards);
                   for ( let i = 0; i < grupoDeSubCards.length; i++) {
                     grupoDeSubCards[i].style.display="flex";
@@ -129,16 +133,20 @@ const contenedorCards = document.querySelector('.contenedor');
               }
 
       })
-	
+
+
+
 // Ingresando productos al carrito de compras
 const contenedor = document.querySelector('.contenedor');
 contenedor.addEventListener('click', (e) => {
 
+  
   objetoSelect = e.target.parentElement;
+  const btnSelect = e.target.classList.contains('selectNumero');
+  if(btnSelect) {
   objetoSelectId = objetoSelect.querySelector('select').dataset.id;
   idArticulo = objetoSelectId
-  
- 
+  }
     clickObjeto = e.target.parentElement;  // al hacer click en el boton comprar me dice que hay dentro del contenedor,
                                                 // con esta info puedo crear el array de objetos con el producto.
     const boton = e.target.classList.contains('btn'); // elijo el boton para hacer alguna accion, al hacer clcik devuelve true.
@@ -316,4 +324,27 @@ function mostrarCarritoVacio() {
   importeTotal = 0;
             carritoContenedor.innerHTML = htmlCarrito;   
   
+}
+
+// Lupa
+const contenedorLupa = document.querySelector('.contenedor');
+      contenedorLupa.addEventListener('click',(l) => {
+      const objetoSelectLupa = l.target.parentElement;
+      const btnLupa = l.target.classList.contains('lupa')
+      if(btnLupa) {
+        const idLupa = objetoSelectLupa.querySelector('img').dataset.lupa;
+        llamarLupa(idLupa);
+        
+      }
+      })
+
+// Cerrar Ventana de lupa
+function cerrarVentanaLupa() {
+  document.getElementById('lupaVentana').style.display="none";
+}
+
+function llamarLupa(idLupa) {
+  
+  document.getElementById('lupaVentana').style.display="flex";
+  document.getElementById('lupaImagen').innerHTML = `<img src="./${idLupa}" alt="Imagen calzado" style="width: 100%"/>`
 }

@@ -1,5 +1,5 @@
 [
-    {
+      {
       "id":1,
       "articulo":320,
       "nInicio":34,
@@ -161,15 +161,15 @@
       "nFinal": 26,
       "marca": "Jamaiquina",
       "precio": 2100,
-      "imagen": "img/productos/jamaiquina/p1azuljamaiquina.png",
+      "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp",
       "color": "Azul",
       "idUno": "p1/1azul",
       "idDos": "idp11azul",
       "categoria": "niños",
       "otrosColores": [
-        {"id": "11.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/jamaiquina/p1fuxiajamaiquina.png", "color": "Fuxia","idUno":"p1/1fuxia","idDos":"idp11fuxia"},
-        {"id": "11.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/jamaiquina/p1negrojamaiquina.png", "color": "Negro","idUno":"p1/1negro","idDos":"idp1/1negro"},
-        {"id": "11.3", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/jamaiquina/p1rosajamaiquina.png", "color": "Rosa","idUno":"p1/1rosa","idDos":"idp1/1rosa"}
+        {"id": "11.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp", "color": "Fuxia","idUno":"p1/1fuxia","idDos":"idp11fuxia"},
+        {"id": "11.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p1/1negro","idDos":"idp1/1negro"},
+        {"id": "11.3", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1rosajamaiquina.webp", "color": "Rosa","idUno":"p1/1rosa","idDos":"idp1/1rosa"}
       ]
     },
     {
@@ -179,15 +179,15 @@
       "nFinal": 34,
       "marca": "Jamaiquina",
       "precio": 2600,
-      "imagen": "img/productos/jamaiquina/p1fuxiajamaiquina.png",
+      "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp",
       "color": "Fuxia",
       "idUno": "p2fuxia",
       "idDos": "idp2fuxia",
       "categoria": "niños",
       "otrosColores": [
-        {"id": "12.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/jamaiquina/p1azuljamaiquina.png", "color": "Azul","idUno":"p1azul","idDos":"idp1azul"},
-        {"id": "12.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/jamaiquina/p1negrojamaiquina.png", "color": "Negro","idUno":"p1negro","idDos":"idp1negro"},
-        {"id": "12.3", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/jamaiquina/p1rosajamaiquina.png", "color": "Rosa","idUno":"p1rosa","idDos":"idp1rosa"}
+        {"id": "12.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp", "color": "Azul","idUno":"p1azul","idDos":"idp2azul"},
+        {"id": "12.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p1negro","idDos":"idp2negro"},
+        {"id": "12.3", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1rosajamaiquina.webp", "color": "Rosa","idUno":"p1rosa","idDos":"idp2rosa"}
       ]
     },
     {
@@ -287,13 +287,13 @@
     "nFinal": 29,
     "marca": "Hey Day",
     "precio": 2700,
-    "imagen": "img/productos/niños/heyday/124HeydayBanco.png",
+    "imagen": "img/productos/niños/heyday/124HeydayBanco.webp",
     "color": "Blanco",
-    "idUno": "124Banco",
-    "idDos": "id124Banco",
+    "idUno": "124Blanco",
+    "idDos": "id124Blanco",
     "categoria": "niños",
     "otrosColores": [
-      {"id": "19.1", "nInicio": 18, "nFinal": 29, "imagen": "img/productos/niños/heyday/124Heydaycoral.webp", "color": "Coral","idUno":"124coral","idDos":"id124coral"}
+      {"id": "19.1", "nInicio": 18, "nFinal": 29, "imagen": "img/productos/niños/heyday/124heydaycoral.webp", "color": "Coral","idUno":"124coral","idDos":"id124coral"}
     ]
   }
 ]
