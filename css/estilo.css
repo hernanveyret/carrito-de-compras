@@ -94,7 +94,7 @@ header {
     border: 2px solid white;
     box-shadow: 1px 1px 9px black;
     width: 15%;
-    height: 345px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
