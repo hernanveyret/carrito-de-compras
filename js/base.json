@@ -485,17 +485,17 @@
         "nFinal":33,
         "marca":"Jaguar",
         "precio":3500,
-        "imagen":"img/productos/niños/jaguar/148/148jaguarcamuazul.png",
+        "imagen":"img/productos/niños/jaguar/148/148jaguarcamuazul.webp",
         "color": "Camuflado/Azul",
         "idUno": "148jaguarcamuazul",
         "idDos": "id148jaguarcamuazul",
         "categoria": "niños",
         "otrosColores": [
-          {"id": "31.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarcamugris.png", "color": "Camuflado/Gris","idUno":"148jaguarcamugris","idDos":"id148jaguarcamugris"},
-          {"id": "31.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarflorazul.png", "color": "Flor/Azul","idUno":"148jaguarflorazul","idDos":"id148jaguarflorazul"},
-          {"id": "31.3", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarrosa.png", "color": "Flor/Rosa","idUno":"148jaguarrosa","idDos":"id148jaguarrosa"},
-          {"id": "31.4", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarazul.png", "color": "Azul","idUno":"148jaguarazul","idDos":"id148jaguarazul"},
-          {"id": "31.5", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguargris.png", "color": "Gris","idUno":"148jaguargris","idDos":"id148jaguargris"}
+          {"id": "31.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarcamugris.webp", "color": "Camuflado/Gris","idUno":"148jaguarcamugris","idDos":"id148jaguarcamugris"},
+          {"id": "31.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarflorazul.webp", "color": "Flor/Azul","idUno":"148jaguarflorazul","idDos":"id148jaguarflorazul"},
+          {"id": "31.3", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarrosa.webp", "color": "Flor/Rosa","idUno":"148jaguarrosa","idDos":"id148jaguarrosa"},
+          {"id": "31.4", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarazul.webp", "color": "Azul","idUno":"148jaguarazul","idDos":"id148jaguarazul"},
+          {"id": "31.5", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguargris.webp", "color": "Gris","idUno":"148jaguargris","idDos":"id148jaguargris"}
          ]
       },
       {
@@ -505,17 +505,17 @@
         "nFinal":33,
         "marca":"Jaguar",
         "precio":3500,
-        "imagen":"img/productos/niños/jaguar/149/149jaguarcamuazul.png",
+        "imagen":"img/productos/niños/jaguar/149/149jaguarcamuazul.webp",
         "color": "Camuflado/Azul",
         "idUno": "149jaguarcamuazul",
         "idDos": "id149jaguarcamuazull",
         "categoria": "niños",
         "otrosColores": [
-          {"id": "32.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarcamugris.png", "color": "Camuflado/Gris","idUno":"149jaguarcamugris","idDos":"id149jaguarcamugris"},
-          {"id": "32.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorazul.png", "color": "Flor/Azul","idUno":"149jaguarflorazul","idDos":"id149jaguarflorazul"},
-          {"id": "32.3", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorrosa.png", "color": "Flor/Rosa","idUno":"149jaguarflorrosa","idDos":"id149jaguarflorrosa"},
-          {"id": "32.4", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarazul.png", "color": "Azul","idUno":"149jaguarazul","idDos":"id149jaguarazul"},
-          {"id": "32.5", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguargris.png", "color": "Gris","idUno":"149jaguargris","idDos":"id149jaguargris"}
+          {"id": "32.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarcamugris.webp", "color": "Camuflado/Gris","idUno":"149jaguarcamugris","idDos":"id149jaguarcamugris"},
+          {"id": "32.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorazul.webp", "color": "Flor/Azul","idUno":"149jaguarflorazul","idDos":"id149jaguarflorazul"},
+          {"id": "32.3", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorrosa.webp", "color": "Flor/Rosa","idUno":"149jaguarflorrosa","idDos":"id149jaguarflorrosa"},
+          {"id": "32.4", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarazul.webp", "color": "Azul","idUno":"149jaguarazul","idDos":"id149jaguarazul"},
+          {"id": "32.5", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguargris.webp", "color": "Gris","idUno":"149jaguargris","idDos":"id149jaguargris"}
          ]
       },
       {
