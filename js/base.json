@@ -587,7 +587,127 @@
         "otrosColores": [
           {"id": "35.1", "nInicio": 28, "nFinal": 35, "imagen": "img/productos/niños/jaguar/9201/9201jaguarazul.png", "color": "Azul","idUno":"9201jaguarazul","idDos":"id9201jaguarazul","categoria":"niños"}
            ]
+      },
+      {
+        "id": "36",
+        "articulo": "410",
+        "nInicio": 27,
+        "nFinal": 40,
+        "marca": "Jaguar",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/410jaguarblanca.webp",
+        "color": "Blanco",
+        "idUno": "410jaguarblanca",
+        "idDos": "id410jaguarblanca",
+        "categoria": "niños",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "36.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/410jaguarnegro.webp", "color": "Negro","idUno":"410jaguarnegro","idDos":"id410jaguarnegro","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "37",
+        "articulo": "420",
+        "nInicio": 27,
+        "nFinal": 40,
+        "marca": "Jaguar",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/420jaguarblanco.webp",
+        "color": "Blanco",
+        "idUno": "420jaguarblanco",
+        "idDos": "id420jaguarblanco",
+        "categoria": "niños",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "37.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/420jaguarnegro.webp", "color": "Negro","idUno":"420jaguarnegro","idDos":"id420jaguarnegro","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "38",
+        "articulo": "1153",
+        "nInicio": 23,
+        "nFinal": 26,
+        "marca": "Tridy",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/11532023tridyblanco.webp",
+        "color": "Blanco",
+        "idUno": "1153tridyblanco",
+        "idDos": "id1153tridyblanco",
+        "categoria": "niños",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "38.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"1153tridynegro","idDos":"id1153tridynegro","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "39",
+        "articulo": "2023",
+        "nInicio": 27,
+        "nFinal": 37,
+        "marca": "Tridy",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/11532023tridyblanco.webp",
+        "color": "Blanco",
+        "idUno": "2023tridyblanco",
+        "idDos": "id2023tridyblanco",
+        "categoria": "niños",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "39.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"2023/2tridynegro","idDos":"id2023/2tridynegro","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "40",
+        "articulo": "1163",
+        "nInicio": 23,
+        "nFinal": 26,
+        "marca": "Tridy",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/1163-2023tridyblanco.webp",
+        "color": "Blanco",
+        "idUno": "1163tridyblanco",
+        "idDos": "id1163tridyblanco",
+        "categoria": "niños",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "40.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"1163tridyblanco","idDos":"id1163tridyblanco","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "41",
+        "articulo": "2123",
+        "nInicio": 27,
+        "nFinal": 37,
+        "marca": "Tridy",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/1163-2023tridyblanco.webp",
+        "color": "Blanco",
+        "idUno": "2123tridyblanco",
+        "idDos": "id2123tridyblanco",
+        "categoria": "niños",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "41.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"2123/2tridyblanco","idDos":"id2123/2tridyblanco","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "42",
+        "articulo": "100",
+        "nInicio": 34,
+        "nFinal": 45,
+        "marca": "Tridy",
+        "precio": 3600,
+        "imagen": "img/productos/colegial/100bletzblanca.webp",
+        "color": "Blanco",
+        "idUno": "100bletzblanca",
+        "idDos": "id100bletzblanca",
+        "categoria": "unisex",
+        "estilo": "colegial",
+        "otrosColores": [
+          {"id": "42.1", "nInicio": 24, "nFinal": 45, "imagen": "img/productos/colegial/100bletznegro.webp", "color": "Negro","idUno":"100bletznegro","idDos":"id100bletznegro","categoria":"niños"}
+           ]
       }
+      
 
       
 ]
