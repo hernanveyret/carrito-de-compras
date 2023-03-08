@@ -599,7 +599,7 @@
         "color": "Blanco",
         "idUno": "410jaguarblanca",
         "idDos": "id410jaguarblanca",
-        "categoria": "niños",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "36.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/410jaguarnegro.webp", "color": "Negro","idUno":"410jaguarnegro","idDos":"id410jaguarnegro","categoria":"niños"}
@@ -616,7 +616,7 @@
         "color": "Blanco",
         "idUno": "420jaguarblanco",
         "idDos": "id420jaguarblanco",
-        "categoria": "niños",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "37.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/420jaguarnegro.webp", "color": "Negro","idUno":"420jaguarnegro","idDos":"id420jaguarnegro","categoria":"niños"}
@@ -633,7 +633,7 @@
         "color": "Blanco",
         "idUno": "1153tridyblanco",
         "idDos": "id1153tridyblanco",
-        "categoria": "niños",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "38.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"1153tridynegro","idDos":"id1153tridynegro","categoria":"niños"}
@@ -650,7 +650,7 @@
         "color": "Blanco",
         "idUno": "2023tridyblanco",
         "idDos": "id2023tridyblanco",
-        "categoria": "niños",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "39.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"2023/2tridynegro","idDos":"id2023/2tridynegro","categoria":"niños"}
@@ -667,7 +667,7 @@
         "color": "Blanco",
         "idUno": "1163tridyblanco",
         "idDos": "id1163tridyblanco",
-        "categoria": "niños",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "40.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"1163tridyblanco","idDos":"id1163tridyblanco","categoria":"niños"}
@@ -684,7 +684,7 @@
         "color": "Blanco",
         "idUno": "2123tridyblanco",
         "idDos": "id2123tridyblanco",
-        "categoria": "niños",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "41.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"2123/2tridyblanco","idDos":"id2123/2tridyblanco","categoria":"niños"}
@@ -701,7 +701,7 @@
         "color": "Blanco",
         "idUno": "100bletzblanca",
         "idDos": "id100bletzblanca",
-        "categoria": "unisex",
+        "categoria": "colegial",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "42.1", "nInicio": 24, "nFinal": 45, "imagen": "img/productos/colegial/100bletznegro.webp", "color": "Negro","idUno":"100bletznegro","idDos":"id100bletznegro","categoria":"niños"}
