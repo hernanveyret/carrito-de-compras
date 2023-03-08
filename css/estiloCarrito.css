@@ -1,5 +1,5 @@
 .carrito-Contenedor {
-    width: 450px;
+    width: 35%;
     height: auto;
     background-color: rgb(15, 199, 231);      
     position: fixed;
@@ -49,6 +49,7 @@ table {
     text-align: center;
     margin: 0 auto;
     border: none;
+    width: 98%;
 }
 td {
     border: none;
