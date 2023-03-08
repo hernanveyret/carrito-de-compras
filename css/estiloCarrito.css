@@ -1,12 +1,13 @@
 .carrito-Contenedor {
     width: 450px;
     height: auto;
-    background-color: rgb(235, 238, 209);      
+    background-color: rgb(15, 199, 231);      
     position: fixed;
     top: 85px;
     box-shadow: 2px 2px 5px black;
     display: none;
     z-index: 30;
+    overflow: auto;
 }
 .carrito-Contenedor p {
     font-weight: 700;
