@@ -477,6 +477,116 @@
         "otrosColores": [
           {"id": "30.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/170heydaygris.webp", "color": "Verde","idUno":"170heydaygris","idDos":"id170heydaygris"}       
          ]
+      },
+      {
+        "id": "31",
+        "articulo":"148",
+        "nInicio":19,
+        "nFinal":33,
+        "marca":"Jaguar",
+        "precio":3500,
+        "imagen":"img/productos/niños/jaguar/148/148jaguarcamuazul.png",
+        "color": "Camuflado/Azul",
+        "idUno": "148jaguarcamuazul",
+        "idDos": "id148jaguarcamuazul",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "31.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarcamugris.png", "color": "Camuflado/Gris","idUno":"148jaguarcamugris","idDos":"id148jaguarcamugris"},
+          {"id": "31.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarflorazul.png", "color": "Flor/Azul","idUno":"148jaguarflorazul","idDos":"id148jaguarflorazul"},
+          {"id": "31.3", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarrosa.png", "color": "Flor/Rosa","idUno":"148jaguarrosa","idDos":"id148jaguarrosa"},
+          {"id": "31.4", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarazul.png", "color": "Azul","idUno":"148jaguarazul","idDos":"id148jaguarazul"},
+          {"id": "31.5", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguargris.png", "color": "Gris","idUno":"148jaguargris","idDos":"id148jaguargris"}
+         ]
+      },
+      {
+        "id": "32",
+        "articulo":"149",
+        "nInicio":19,
+        "nFinal":33,
+        "marca":"Jaguar",
+        "precio":3500,
+        "imagen":"img/productos/niños/jaguar/149/149jaguarcamuazul.png",
+        "color": "Camuflado/Azul",
+        "idUno": "149jaguarcamuazul",
+        "idDos": "id149jaguarcamuazull",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "32.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarcamugris.png", "color": "Camuflado/Gris","idUno":"149jaguarcamugris","idDos":"id149jaguarcamugris"},
+          {"id": "32.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorazul.png", "color": "Flor/Azul","idUno":"149jaguarflorazul","idDos":"id149jaguarflorazul"},
+          {"id": "32.3", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorrosa.png", "color": "Flor/Rosa","idUno":"149jaguarflorrosa","idDos":"id149jaguarflorrosa"},
+          {"id": "32.4", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarazul.png", "color": "Azul","idUno":"149jaguarazul","idDos":"id149jaguarazul"},
+          {"id": "32.5", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguargris.png", "color": "Gris","idUno":"149jaguargris","idDos":"id149jaguargris"}
+         ]
+      },
+      {
+        "id": "33",
+        "articulo": 128,
+        "nInicio": 19,
+        "nFinal": 26,
+        "marca": "Jaguar",
+        "precio": 1900,
+        "imagen": "img/productos/niños/jaguar/128/128-rosa.webp",
+        "color": "Rosa",
+        "idUno": "128/1rosa",
+        "idDos": "id1281rosa",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "33.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-jean.webp", "color": "Jean","idUno":"128/1jean","idDos":"id1281jean","categoria":"niños"},
+          {"id": "33.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-black.webp", "color": "Black","idUno":"128/1black","idDos":"id1281black","categoria":"niños"},
+          {"id": "33.3", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-azul.webp", "color": "Azul","idUno":"128/1azul","idDos":"id1281azul","categoria":"niños"},
+          {"id": "33.4", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-rojo.webp", "color": "Rojo","idUno":"128/1rojo","idDos":"id1281rojo","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "34",
+        "articulo": "8203",
+        "nInicio": 27,
+        "nFinal": 34,
+        "marca": "Tridy",
+        "precio": 1900,
+        "imagen": "img/productos/niños/tridy/8203/8203tridygris.png",
+        "color": "Gris",
+        "idUno": "8203tridygris",
+        "idDos": "id18203tridygris",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "33.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tridy/8203/8203tridygrisamarillo.png", "color": "Amarillo","idUno":"8203tridygrisamarillo","idDos":"id8203tridygrisamarillo","categoria":"niños"},
+          {"id": "33.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tridy/8203/8203tridygrisfuxia.png", "color": "Fuxia","idUno":"8203tridygrisfuxia","idDos":"id8203tridygrisfuxia","categoria":"niños"},
+          {"id": "33.3", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tridy/8203/8203tridyrosa.png", "color": "Rosa","idUno":"8203tridyrosa","idDos":"id8203tridyrosa","categoria":"niños"},
+          {"id": "33.4", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tridy/8203/8203tridygrisverde.png", "color": "Verde","idUno":"8203tridygrisverde","idDos":"id8203tridygrisverde","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "34",
+        "articulo": "925",
+        "nInicio": 27,
+        "nFinal": 33,
+        "marca": "Tridy",
+        "precio": 1900,
+        "imagen": "img/productos/niños/jaguar/925/925jaguarnegro.png",
+        "color": "Negro",
+        "idUno": "925jaguarnegro",
+        "idDos": "id925jaguarnegro",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "34.1", "nInicio": 27, "nFinal": 33, "imagen": "img/productos/niños/jaguar/925/925jaguarrosa.png", "color": "Rosa","idUno":"925jaguarrosa","idDos":"id925jaguarrosa","categoria":"niños"}
+           ]
+      },
+      {
+        "id": "35",
+        "articulo": "9201",
+        "nInicio": 28,
+        "nFinal": 35,
+        "marca": "Tridy",
+        "precio": 1900,
+        "imagen": "img/productos/niños/jaguar/9201/9201jaguarrosa.png",
+        "color": "Rosa",
+        "idUno": "9201jaguarrosa",
+        "idDos": "id9201jaguarrosa",
+        "categoria": "niños",
+        "otrosColores": [
+          {"id": "35.1", "nInicio": 28, "nFinal": 35, "imagen": "img/productos/niños/jaguar/9201/9201jaguarazul.png", "color": "Azul","idUno":"9201jaguarazul","idDos":"id9201jaguarazul","categoria":"niños"}
+           ]
       }
 
       
