@@ -45,7 +45,7 @@ fetch('js/base.json').then(response =>{
     return response.json();   
 }).then(articulos => {            // pone la informacion en la variable articulos  
 
-    if (categoria != 'niños') {
+    if (categoria != 'niños' ) {
 
           for ( let indice in articulos ) {
         
@@ -62,6 +62,9 @@ fetch('js/base.json').then(response =>{
         
         if (articulos[indice].categoria == 'niños' ) {                     
                mostrarCards(indice) 
+        }
+        if (articulos[indice].categoria === 'colegial') {
+            mostrarCards(indice);
         }
     }
 }
