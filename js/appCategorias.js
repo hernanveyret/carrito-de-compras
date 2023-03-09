@@ -45,29 +45,26 @@ fetch('js/base.json').then(response =>{
     return response.json();   
 }).then(articulos => {            // pone la informacion en la variable articulos  
 
-    if (categoria != 'niños' ) {
-
-          for ( let indice in articulos ) {
-        
-            if (articulos[indice].categoria == 'unisex' ) {                     
-                   mostrarCards(indice) 
-            }
-
-            if (articulos[indice].categoria == categoria) {
-                mostrarCards(indice)
-            }
-    }
-}else { 
-    for ( let indice in articulos ) {
-        
-        if (articulos[indice].categoria == 'niños' ) {                     
-               mostrarCards(indice) 
+  if ( categoria === 'niños') {
+      for ( let indice in articulos) {
+        if ( articulos[indice].categoria === 'niños') {
+          mostrarCards(indice);
         }
-        if (articulos[indice].categoria === 'colegial') {
-            mostrarCards(indice);
+      }
+  } else if ( categoria === 'dama') {
+      for ( let indice in articulos ) {
+        if ( articulos[indice].categoria === 'dama' ||  articulos[indice].categoria === 'unisex') {
+          mostrarCards(indice);
         }
-    }
-}
+      }
+  } else {
+      for ( let indice in articulos ) {
+        if ( articulos[indice].categoria === 'hombre' || articulos[indice].categoria === 'unisex') {
+          mostrarCards(indice);
+        }
+      }
+  }
+
 
             function mostrarCards(indice) {
                 artId = articulos[indice].id;
