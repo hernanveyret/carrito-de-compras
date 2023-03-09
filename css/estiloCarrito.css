@@ -7,7 +7,7 @@
     box-shadow: 2px 2px 5px black;
     display: none;
     z-index: 30;
-    overflow: auto;
+    
 }
 .carrito-Contenedor p {
     font-weight: 700;
@@ -65,10 +65,17 @@ td {
     .carrito-Contenedor {
         width: auto;
     }
+    table {
+        width: auto;
+    }
 }
 
 @media (max-width: 576px) {
     .carrito-Contenedor {
         width: auto;
+        
+    }
+    table {
+        width:90%;
     }
 }
