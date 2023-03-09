@@ -599,7 +599,7 @@
         "color": "Blanco",
         "idUno": "410jaguarblanca",
         "idDos": "id410jaguarblanca",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "36.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/410jaguarnegro.webp", "color": "Negro","idUno":"410jaguarnegro","idDos":"id410jaguarnegro","categoria":"niños"}
@@ -616,7 +616,7 @@
         "color": "Blanco",
         "idUno": "420jaguarblanco",
         "idDos": "id420jaguarblanco",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "37.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/420jaguarnegro.webp", "color": "Negro","idUno":"420jaguarnegro","idDos":"id420jaguarnegro","categoria":"niños"}
@@ -633,7 +633,7 @@
         "color": "Blanco",
         "idUno": "1153tridyblanco",
         "idDos": "id1153tridyblanco",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "38.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"1153tridynegro","idDos":"id1153tridynegro","categoria":"niños"}
@@ -650,7 +650,7 @@
         "color": "Blanco",
         "idUno": "2023tridyblanco",
         "idDos": "id2023tridyblanco",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "39.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"2023/2tridynegro","idDos":"id2023/2tridynegro","categoria":"niños"}
@@ -667,7 +667,7 @@
         "color": "Blanco",
         "idUno": "1163tridyblanco",
         "idDos": "id1163tridyblanco",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "40.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"1163tridyblanco","idDos":"id1163tridyblanco","categoria":"niños"}
@@ -684,7 +684,7 @@
         "color": "Blanco",
         "idUno": "2123tridyblanco",
         "idDos": "id2123tridyblanco",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "41.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"2123/2tridyblanco","idDos":"id2123/2tridyblanco","categoria":"niños"}
@@ -701,13 +701,141 @@
         "color": "Blanco",
         "idUno": "100bletzblanca",
         "idDos": "id100bletzblanca",
-        "categoria": "colegial",
+        "categoria": "niños",
         "estilo": "colegial",
         "otrosColores": [
           {"id": "42.1", "nInicio": 24, "nFinal": 45, "imagen": "img/productos/colegial/100bletznegro.webp", "color": "Negro","idUno":"100bletznegro","idDos":"id100bletznegro","categoria":"niños"}
            ]
-      }
-      
-
+      },
+      {
+        "id": "43",
+        "articulo": "941",
+        "nInicio": 35,
+        "nFinal": 41,
+        "marca": "Arana",
+        "precio": 3600,
+        "imagen": "img/productos/dama/arana/941aranasuela.webp",
+        "color": "Suela",
+        "idUno": "941aranasuela",
+        "idDos": "id941aranasuela",
+        "categoria": "dama",
+        "estilo": "sandalia",
+        "otrosColores": [
+          {"id": "43.1", "nInicio": 35, "nFinal": 41, "imagen": "img/productos/dama/arana/941arananegro.webp", "color": "Negro","idUno":"941arananegro","idDos":"id941arananegro","categoria":"dama"}
+           ]
+      },
+      {
+        "id": "44",
+        "articulo": "940",
+        "nInicio": 35,
+        "nFinal": 41,
+        "marca": "Arana",
+        "precio": 3600,
+        "imagen": "img/productos/dama/arana/940arananegro.webp",
+        "color": "Suela",
+        "idUno": "940arananegro",
+        "idDos": "id940arananegro",
+        "categoria": "dama",
+        "estilo": "sandalia",
+        "otrosColores": [
+          {"id": "43.1", "nInicio": 35, "nFinal": 41, "imagen": "img/productos/dama/arana/940aranasuela.webp", "color": "Suela","idUno":"940aranasuela","idDos":"id940aranasuela","categoria":"dama"}
+           ]
+      },
+      {
+        "id": "45",
+        "articulo": "609",
+        "nInicio": 35,
+        "nFinal": 40,
+        "marca": "Growing",
+        "precio": 3600,
+        "imagen": "img/productos/dama/growing/609growingoro.webp",
+        "color": "Oro",
+        "idUno": "609growingoro",
+        "idDos": "id609growingoro",
+        "categoria": "dama",
+        "estilo": "sandalia",
+        "otrosColores": [
+          {"id": "45.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/dama/growing/609growingplata.webp", "color": "Plata","idUno":"609growingplata","idDos":"id609growingplata","categoria":"dama"},
+          {"id": "45.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/dama/growing/609growingnegro.webp", "color": "Negro","idUno":"609growingnegro","idDos":"id609growingnegro","categoria":"dama"}
+           ]
+      },
+      {
+        "id": "46",
+        "articulo": "324",
+        "nInicio": 35,
+        "nFinal": 41,
+        "marca": "Siris",
+        "precio": 3600,
+        "imagen": "img/productos/dama/siris/324sirissuela.webp",
+        "color": "Suela",
+        "idUno": "324sirissuela",
+        "idDos": "id324sirissuela",
+        "categoria": "dama",
+        "estilo": "sandalia",
+        "otrosColores": [
+          {"id": "46.1", "nInicio": 35, "nFinal": 41, "imagen": "img/productos/dama/siris/324sirisnegro.webp", "color": "Negro","idUno":"324sirisnegro","idDos":"id324sirisnegro","categoria":"dama"}
+           ]
+      },
+     
+      {
+        "id": "47",
+        "articulo": "Duero 100",
+        "nInicio": 36,
+        "nFinal": 40,
+        "marca": "Savage",
+        "precio": 8600,
+        "imagen": "img/productos/dama/savage/duero100savagenegro.webp",
+        "color": "Negro",
+        "idUno": "duero100savagenegro",
+        "idDos": "idduero100savagenegro",
+        "categoria": "dama",
+        "estilo": "sandalia"
+      },
+      {
+        "id": "48",
+        "articulo": "Reno 18",
+        "nInicio": 36,
+        "nFinal": 40,
+        "marca": "Savage",
+        "precio": 8600,
+        "imagen": "img/productos/dama/savage/reno18savagenegro.webp",
+        "color": "Negro",
+        "idUno": "reno18savagenegro",
+        "idDos": "idreno18savagenegro",
+        "categoria": "dama",
+        "estilo": "sandalia"
+      },
+      {
+        "id": "49",
+        "articulo": "Reno 20",
+        "nInicio": 36,
+        "nFinal": 40,
+        "marca": "Savage",
+        "precio": 8600,
+        "imagen": "img/productos/dama/savage/reno20savagenegro.webp",
+        "color": "Negro",
+        "idUno": "reno20savagenegro",
+        "idDos": "idreno20savagenegro",
+        "categoria": "dama",
+        "estilo": "sandalia"
+      },
+      {
+        "id": "50",
+        "articulo": "Piana",
+        "nInicio": 36,
+        "nFinal": 40,
+        "marca": "Savage",
+        "precio": 8600,
+        "imagen": "img/productos/dama/savage/pianasavageblanco.webp",
+        "color": "Blanco",
+        "idUno": "pianasavageblanco",
+        "idDos": "idpianasavageblanco",
+        "categoria": "dama",
+        "estilo": "sandalia",
+        "otrosColores": [
+          {"id": "50.1", "nInicio": 36, "nFinal": 40, "imagen": "img/productos/dama/savage/pianasavagenegro.webp", "color": "Negro","idUno":"pianasavageblanco","idDos":"idpianasavageblanco","categoria":"dama"}
+          
+           ]
+      }  
       
 ]
