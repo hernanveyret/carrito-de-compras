@@ -40,9 +40,10 @@ fetch('js/base.json').then(response =>{
         let htmlE = '';
             htmlE += `<h3 class="hMarcas">ESTILOS</h3>`;
             htmlE += `<select id="menuPorEstilo" onchange="estiloMenu()">`;
-                for( let i = 0; i < productosEstilo.length; i++) {
-                  htmlE += `<option value="${productosEstilo[i]}" style="text-align: center">${productosEstilo[i]}</option>`;
-                }
+                  htmlE += `<option  style="text-align: center">TU ELECCION</option>`;    
+                  for( let i = 0; i < productosEstilo.length; i++) {
+                        htmlE += `<option value="${productosEstilo[i]}" style="text-align: center">${productosEstilo[i]}</option>`;
+                      }
             htmlE += `</select>`;
             menuEstilos.innerHTML = htmlE;
 
