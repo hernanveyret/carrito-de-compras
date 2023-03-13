@@ -876,7 +876,7 @@
         "categoria": "dama",
         "estilo": "Ojotas",
         "otrosColores": [
-          {"id": "50.1", "nInicio": 36, "nFinal": 40, "imagen": "img/productos/dama/savage/pianasavagenegro.webp", "color": "Negro","idUno":"pianasavageblanco","idDos":"idpianasavageblanco","categoria":"dama"}
+          {"id": "50.1", "nInicio": 36, "nFinal": 40, "imagen": "img/productos/dama/savage/pianasavagenegro.webp", "color": "Negro","idUno":"pianasavagenegro","idDos":"pianasavagenegro","categoria":"dama"}
            ]
       }
       
