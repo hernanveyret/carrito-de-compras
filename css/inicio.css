@@ -59,14 +59,25 @@
     color:brown;
     transform:translate(15px)
 }
-
+.contenedorEstilos {
+    width: 100%;
+    text-align:center;
+}
+#menuPorEstilo {
+    width: 90%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 19px;
+    letter-spacing: 5px;
+}
 .itemImagen {
     width: 50%;
     height: 300px;    
 }
 .contenedorMarcas {
-    width: auto;
+    width: 100%;
     height: auto;
+    border-bottom: 1px solid white;
+    text-align: center;
 }
 .cardsCategorias {
     border: 1px solid black;
@@ -120,8 +131,7 @@
         height: auto;
     }
     .contenedorMarcas {
-        width: 100%;
-        border: 1px solid black;
+        width: 100%;        
     }
     .contenedorMarcas ul {
         display: flex;
@@ -129,6 +139,7 @@
         justify-content: center;
         list-style-type: none;
     }
+  
     .btn-marcas {
         margin-right: 10px;
     }

@@ -237,7 +237,7 @@ footer {
 .headerIzquerdo:hover  ul {
         display: inline-block;
         position: absolute;
-        top: 50px;
+        top: 70px;
         z-index: 19;
         background-color: black;
         left: 20px;
