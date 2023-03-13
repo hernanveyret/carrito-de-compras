@@ -38,33 +38,53 @@ let clickObjeto;
 const productosMarca = [];
 
 let categoria = localStorage.getItem('miCategoria');   // tomo la marca que se elijio del localStorage
-        
+let seleccionPor = localStorage.getItem('seleccionPor');
+let estilos = localStorage.getItem('miEstilo');
+
 
 // tomar informacion de Json.
 fetch('js/base.json').then(response =>{ 
     return response.json();   
-}).then(articulos => {            // pone la informacion en la variable articulos  
+}).then(articulos => {            // pone la informacion en la variable articulos  ----------------------
 
-  if ( categoria === 'niños') {
-      for ( let indice in articulos) {
-        if ( articulos[indice].categoria === 'niños') {
-          mostrarCards(indice);
-        }
-      }
-  } else if ( categoria === 'dama') {
-      for ( let indice in articulos ) {
-        if ( articulos[indice].categoria === 'dama' ||  articulos[indice].categoria === 'unisex') {
-          mostrarCards(indice);
-        }
-      }
-  } else {
-      for ( let indice in articulos ) {
-        if ( articulos[indice].categoria === 'hombre' || articulos[indice].categoria === 'unisex') {
-          mostrarCards(indice);
-        }
-      }
+  if (seleccionPor === 'categoria') {
+    seleccionPorCategoria()
+  } else { 
+    seleccionPorEstilo()
   }
 
+        function seleccionPorCategoria() { 
+            if ( categoria === 'niños') {
+                for ( let indice in articulos) {
+                  if ( articulos[indice].categoria === 'niños') {
+                    mostrarCards(indice);
+                  }
+                }
+            } else if ( categoria === 'dama') {
+                for ( let indice in articulos ) {
+                  if ( articulos[indice].categoria === 'dama' ||  articulos[indice].categoria === 'unisex') {
+                    mostrarCards(indice);
+                  }
+                }
+              } else {
+                  for ( let indice in articulos ) {
+                    if ( articulos[indice].categoria === 'hombre' || articulos[indice].categoria === 'unisex') {
+                      mostrarCards(indice);
+                    }
+                  }
+              } 
+      
+        }
+        // Seleccion por estilo de producto
+        function seleccionPorEstilo() {
+         console.log(estilos)
+         for( let i in articulos) {
+              if ( estilos === articulos[i].estilo) {
+                mostrarCards(i)
+              }
+         }
+        }
+  
 
             function mostrarCards(indice) {
                 artId = articulos[indice].id;
@@ -131,7 +151,7 @@ fetch('js/base.json').then(response =>{
             
     
           
-})
+}) // --------------------------------------------
 
 //------------------------------------------
 // Selecciona el numero del calzado.

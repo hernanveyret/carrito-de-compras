@@ -11,6 +11,7 @@
         "idUno": "5251negro",
         "idDos": "id5251negro",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "1.1", "nInicio": 21, "nFinal": 26, "imagen": "img/productos/niños/e&g/525eygblanco.webp", "color": "Blanco","idUno":"5251blanco","idDos":"id5251blanco"}
          ]
@@ -27,6 +28,7 @@
         "idUno": "5252blanco",
         "idDos": "id5252blanco",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "2.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/525eygnegro.webp", "color": "Negro","idUno":"525/2negro","idDos":"id5252negro"}
          ]
@@ -42,7 +44,8 @@
         "color": "Lila",
         "idUno": "280eyglila",
         "idDos": "id280eyglila",
-        "categoria": "niños"        
+        "categoria": "niños",
+        "estilo": "Sandalia"       
       },
       {
         "id":4,
@@ -55,7 +58,8 @@
         "color": "Rosa",
         "idUno": "270eygrosa",
         "idDos": "id270eygrosa",
-        "categoria": "niños"        
+        "categoria": "niños",
+        "estilo": "Sandalia"        
       },
       {
         "id":5,
@@ -69,6 +73,7 @@
         "idUno": "5001eygblanco",
         "idDos": "id5001eygblanco",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "5.1", "nInicio": 21, "nFinal": 26, "imagen": "img/productos/niños/e&g/500eygnegro.webp", "color": "Negro","idUno":"500/1eygnegro","idDos":"id5001eygnegro"}
          ]
@@ -85,6 +90,7 @@
         "idUno": "5002eygnegro",
         "idDos": "id5002eygnegro",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "6.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/500eygblanco.webp", "color": "Blanco","idUno":"500/2eygnegro","idDos":"id5002eygnegro"}
          ]
@@ -101,6 +107,7 @@
         "idUno": "5901eygnegro",
         "idDos": "id5901eygnegro",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "7.1", "nInicio": 21, "nFinal": 26, "imagen": "img/productos/niños/e&g/590eygplata.webp", "color": "Plata","idUno":"5901eygplata","idDos":"id5901eygplata"}
          ]
@@ -117,6 +124,7 @@
         "idUno": "5902eygplata",
         "idDos": "id5902eygplata",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "8.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/590eygnegro.webp", "color": "Negro","idUno":"5902negro","idDos":"id5902negro"}
          ]
@@ -133,6 +141,7 @@
         "idUno": "540eygnegro",
         "idDos": "id5540eygnegro",
         "categoria": "niños",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "9.1", "nInicio": 27, "nFinal": 36, "imagen": "img/productos/niños/e&g/540eygblanco.webp", "color": "Blanco","idUno":"540eygblanco","idDos":"id540eygblanco"}
          ]
@@ -149,6 +158,7 @@
         "idUno": "306blinknegro",
         "idDos": "id306blinknegro",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "10.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/blink/306blinkgris.webp", "color": "Gris","idUno":"306blinkgris","idDos":"id306blinkgris"}
          ]
@@ -165,6 +175,7 @@
         "idUno": "323blinkblanco",
         "idDos": "id323blinkblanco",
         "categoria": "niños",
+        "estilo": "Botin",
         "otrosColores": [          
           {"id": "11.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/niños/blink/323blinkceleste.webp", "color": "Celeste","idUno":"323blinkbceleste","idDos":"id323blinkbceleste"},
           {"id": "11.2", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/niños/blink/323blinkazul.webp", "color": "Azul","idUno":"323blinkbazul","idDos":"id323blinkbazul"},
@@ -184,6 +195,7 @@
         "idUno": "l1jamaiquinaazul",
         "idDos": "idl1jamaiquinaazul",
         "categoria": "niños",
+        "estilo": "Ojotas",
         "otrosColores": [          
           {"id": "12.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinarosa.webp", "color": "Rosa","idUno":"l1jamaiquinarosa","idDos":"l1jamaiquinarosa"},
           {"id": "12.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinanegro.webp", "color": "Negro","idUno":"l1jamaiquinanegro","idDos":"idl1jamaiquinanegro"}
@@ -201,6 +213,7 @@
         "idUno": "l2jamaiquinarosa",
         "idDos": "idl2jamaiquinarosa",
         "categoria": "niños",
+        "estilo": "Ojotas",
         "otrosColores": [          
           {"id": "13.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinaazul.webp", "color": "Azul","idUno":"l1jamaiquinaazul","idDos":"l1jamaiquinaazul"},
           {"id": "13.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/l1l2jamaiquinanegro.webp", "color": "Negro","idUno":"l1jamaiquinanegro","idDos":"idl1jamaiquinanegro"}
@@ -218,6 +231,7 @@
         "idUno": "p1/1azul",
         "idDos": "idp11azul",
         "categoria": "niños",
+        "estilo": "Ojotas",
         "otrosColores": [
           {"id": "14.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp", "color": "Fuxia","idUno":"p1/1fuxia","idDos":"idp11fuxia"},
           {"id": "14.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p1/1negro","idDos":"idp1/1negro"},
@@ -236,6 +250,7 @@
         "idUno": "p2fuxia",
         "idDos": "idp2fuxia",
         "categoria": "niños",
+        "estilo": "Ojotas",
         "otrosColores": [
           {"id": "15.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp", "color": "Azul","idUno":"p2azul","idDos":"idp2azul"},
           {"id": "15.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p2negro","idDos":"idp2negro"},
@@ -254,6 +269,7 @@
         "idUno": "016actionverde",
         "idDos": "id016actionverde",
         "categoria": "niños",
+        "estilo": "Ojotas",
         "otrosColores": [
           {"id": "16.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/action/016actionrosa.webp", "color": "Rosa","idUno":"016actionrosa","idDos":"id016actionrosa"},
           {"id": "16.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/action/016actionazul.webp", "color": "Azul","idUno":"016actionazul","idDos":"id016actionazul"}
@@ -271,6 +287,7 @@
         "idUno": "50tresarana",
         "idDos": "id50tresarana",
         "categoria": "niños",
+        "estilo": "Ojotas",
         "otrosColores": [
           {"id": "17.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tres/50tresnegro.webp", "color": "Negro","idUno":"50tresnegro","idDos":"id050tresnegro"},
           {"id": "17.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tres/50tresrosa.webp", "color": "Rosa","idUno":"50tresrosa","idDos":"id50tresrosa"}
@@ -288,6 +305,7 @@
         "idUno": "6002proforceazul",
         "idDos": "id6002proforceazul",
         "categoria": "niños",
+        "estilo": "B.lluvia",
         "otrosColores": [
           {"id": "18.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/proforce/6002proforcerosa.webp", "color": "Rosa","idUno":"6002proforecrosa","idDos":"id06002proforcerosa"}
          ]
@@ -304,6 +322,7 @@
         "idUno": "6001proforcenaves",
         "idDos": "id6001proforcenaves",
         "categoria": "niños",
+        "estilo": "B.lluvia",
         "otrosColores": [
           {"id": "19.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/proforce/6001proforcecorazones.webp", "color": "Rosa/Corazon","idUno":"6001proforcecorazones","idDos":"id06001proforcecorazones"}
          ]
@@ -320,6 +339,7 @@
         "idUno": "132heydayrosa",
         "idDos": "id132heydayrosa",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "20.1", "nInicio": 18, "nFinal": 23, "imagen": "img/productos/niños/heyday/132heydayazul.webp", "color": "Azul","idUno":"132heydayazul","idDos":"id132heydayazul"},
           {"id": "20.2", "nInicio": 18, "nFinal": 23, "imagen": "img/productos/niños/heyday/132heydaynegro.webp", "color": "Negro","idUno":"132heydaynegro","idDos":"id132heydaynegro"}
@@ -337,6 +357,7 @@
         "idUno": "007heydaychoco",
         "idDos": "id007heydaychoco",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "21.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/007heydaynegro.webp", "color": "Negro","idUno":"007heydaynegro","idDos":"id007heydaynegro"}
          ]
@@ -352,7 +373,8 @@
         "color": "Negro",
         "idUno": "174heydaynegrorosa",
         "idDos": "174heydaynegrorosa",
-        "categoria": "niños"        
+        "categoria": "niños",
+        "estilo": "Zapatilla"      
       },
       {
         "id": 23,
@@ -365,7 +387,8 @@
         "color": "Rosa",
         "idUno": "174heydayrosa",
         "idDos": "174heydayrosa",
-        "categoria": "niños"        
+        "categoria": "niños",
+        "estilo": "Zapatilla"       
       },
       {
         "id": 24,
@@ -379,6 +402,7 @@
         "idUno": "000heydayrosa",
         "idDos": "id000heydayrosa",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "24.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/000heydayazul.webp", "color": "Azul","idUno":"000heydayazul","idDos":"id000heydayazul"},
           {"id": "24.2", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/000heydaynegro.webp", "color": "Negro","idUno":"000heydaynegro","idDos":"id000heydaynegro"}
@@ -396,6 +420,7 @@
         "idUno": "1731heydaynegroverde",
         "idDos": "id1731heydaynegroverde",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "25.1", "nInicio": 18, "nFinal": 22, "imagen": "img/productos/niños/heyday/173heydaynegrochoco.webp", "color": "Negro","idUno":"1731heydaynegrochoco","idDos":"id1731heydaynegrochoco"}       
          ]
@@ -412,6 +437,7 @@
         "idUno": "1732heydaynegroverde",
         "idDos": "id1732heydaynegroverde",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "26.1", "nInicio": 30, "nFinal": 36, "imagen": "img/productos/niños/heyday/173heydaynegrochoco.webp", "color": "Negro","idUno":"1732heydaynegrochoco","idDos":"id1732heydaynegrochoco"}       
          ]
@@ -427,7 +453,8 @@
         "color": "Negro/Choco",
         "idUno": "173heydaynegrochoco",
         "idDos": "id173heydaynegrochoco",
-        "categoria": "niños"        
+        "categoria": "niños",
+        "estilo": "Zapatilla"      
       },
       {
         "id": 28,
@@ -441,6 +468,7 @@
         "idUno": "014heydayazul",
         "idDos": "id014heydayazul",
         "categoria": "niños",
+        "estilo": "Pancha",
         "otrosColores": [
           {"id": "28.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/niños/heyday/014heydaynegro.webp", "color": "Negro","idUno":"014heydaynegro","idDos":"id014heydaynegro"}       
          ]
@@ -457,6 +485,7 @@
         "idUno": "165heydayrosa",
         "idDos": "id165heydayrosa",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "29.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/165heydayrosa.webp", "color": "Azul","idUno":"165heydayazul","idDos":"id165heydayazul"},
           {"id": "29.2", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/165heydayrosa.webp", "color": "Negro","idUno":"165heydaynegro","idDos":"id165heydaynegro"}
@@ -474,6 +503,7 @@
         "idUno": "170heydayazul",
         "idDos": "id170heydayazul",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "30.1", "nInicio": 23, "nFinal": 36, "imagen": "img/productos/niños/heyday/170heydaygris.webp", "color": "Verde","idUno":"170heydaygris","idDos":"id170heydaygris"}       
          ]
@@ -490,6 +520,7 @@
         "idUno": "148jaguarcamuazul",
         "idDos": "id148jaguarcamuazul",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "31.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarcamugris.webp", "color": "Camuflado/Gris","idUno":"148jaguarcamugris","idDos":"id148jaguarcamugris"},
           {"id": "31.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/148/148jaguarflorazul.webp", "color": "Flor/Azul","idUno":"148jaguarflorazul","idDos":"id148jaguarflorazul"},
@@ -510,6 +541,7 @@
         "idUno": "149jaguarcamuazul",
         "idDos": "id149jaguarcamuazull",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "32.1", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarcamugris.webp", "color": "Camuflado/Gris","idUno":"149jaguarcamugris","idDos":"id149jaguarcamugris"},
           {"id": "32.2", "nInicio": 19, "nFinal": 33, "imagen": "img/productos/niños/jaguar/149/149jaguarflorazul.webp", "color": "Flor/Azul","idUno":"149jaguarflorazul","idDos":"id149jaguarflorazul"},
@@ -530,6 +562,7 @@
         "idUno": "128/1rosa",
         "idDos": "id1281rosa",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "33.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-jean.webp", "color": "Jean","idUno":"128/1jean","idDos":"id1281jean","categoria":"niños"},
           {"id": "33.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-black.webp", "color": "Black","idUno":"128/1black","idDos":"id1281black","categoria":"niños"},
@@ -549,6 +582,7 @@
         "idUno": "8203tridygris",
         "idDos": "id18203tridygris",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "33.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tridy/8203/8203tridygrisamarillo.png", "color": "Amarillo","idUno":"8203tridygrisamarillo","idDos":"id8203tridygrisamarillo","categoria":"niños"},
           {"id": "33.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/tridy/8203/8203tridygrisfuxia.png", "color": "Fuxia","idUno":"8203tridygrisfuxia","idDos":"id8203tridygrisfuxia","categoria":"niños"},
@@ -568,6 +602,7 @@
         "idUno": "925jaguarnegro",
         "idDos": "id925jaguarnegro",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "34.1", "nInicio": 27, "nFinal": 33, "imagen": "img/productos/niños/jaguar/925/925jaguarrosa.png", "color": "Rosa","idUno":"925jaguarrosa","idDos":"id925jaguarrosa","categoria":"niños"}
            ]
@@ -584,6 +619,7 @@
         "idUno": "9201jaguarrosa",
         "idDos": "id9201jaguarrosa",
         "categoria": "niños",
+        "estilo": "Zapatilla",
         "otrosColores": [
           {"id": "35.1", "nInicio": 28, "nFinal": 35, "imagen": "img/productos/niños/jaguar/9201/9201jaguarazul.png", "color": "Azul","idUno":"9201jaguarazul","idDos":"id9201jaguarazul","categoria":"niños"}
            ]
@@ -600,7 +636,8 @@
         "idUno": "410jaguarblanca",
         "idDos": "id410jaguarblanca",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "36.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/410jaguarnegro.webp", "color": "Negro","idUno":"410jaguarnegro","idDos":"id410jaguarnegro","categoria":"niños"}
            ]
@@ -617,7 +654,8 @@
         "idUno": "420jaguarblanco",
         "idDos": "id420jaguarblanco",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "37.1", "nInicio": 27, "nFinal": 40, "imagen": "img/productos/colegial/420jaguarnegro.webp", "color": "Negro","idUno":"420jaguarnegro","idDos":"id420jaguarnegro","categoria":"niños"}
            ]
@@ -634,7 +672,8 @@
         "idUno": "1153tridyblanco",
         "idDos": "id1153tridyblanco",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "38.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"1153tridynegro","idDos":"id1153tridynegro","categoria":"niños"}
            ]
@@ -651,7 +690,8 @@
         "idUno": "2023tridyblanco",
         "idDos": "id2023tridyblanco",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "39.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/11532023tridynegro.webp", "color": "Negro","idUno":"2023/2tridynegro","idDos":"id2023/2tridynegro","categoria":"niños"}
            ]
@@ -668,7 +708,8 @@
         "idUno": "1163tridyblanco",
         "idDos": "id1163tridyblanco",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "40.1", "nInicio": 23, "nFinal": 26, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"1163tridyblanco","idDos":"id1163tridyblanco","categoria":"niños"}
            ]
@@ -685,7 +726,8 @@
         "idUno": "2123tridyblanco",
         "idDos": "id2123tridyblanco",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "41.1", "nInicio": 27, "nFinal": 37, "imagen": "img/productos/colegial/1163-2023tridynegro.webp", "color": "Negro","idUno":"2123/2tridyblanco","idDos":"id2123/2tridyblanco","categoria":"niños"}
            ]
@@ -702,7 +744,8 @@
         "idUno": "100bletzblanca",
         "idDos": "id100bletzblanca",
         "categoria": "niños",
-        "estilo": "colegial",
+        "estilo": "Zapatilla",
+        "subEstilo": "colegial",
         "otrosColores": [
           {"id": "42.1", "nInicio": 24, "nFinal": 45, "imagen": "img/productos/colegial/100bletznegro.webp", "color": "Negro","idUno":"100bletznegro","idDos":"id100bletznegro","categoria":"niños"}
            ]
@@ -719,7 +762,7 @@
         "idUno": "941aranasuela",
         "idDos": "id941aranasuela",
         "categoria": "dama",
-        "estilo": "sandalia",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "43.1", "nInicio": 35, "nFinal": 41, "imagen": "img/productos/dama/arana/941arananegro.webp", "color": "Negro","idUno":"941arananegro","idDos":"id941arananegro","categoria":"dama"}
            ]
@@ -736,7 +779,7 @@
         "idUno": "940arananegro",
         "idDos": "id940arananegro",
         "categoria": "dama",
-        "estilo": "sandalia",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "43.1", "nInicio": 35, "nFinal": 41, "imagen": "img/productos/dama/arana/940aranasuela.webp", "color": "Suela","idUno":"940aranasuela","idDos":"id940aranasuela","categoria":"dama"}
            ]
@@ -753,7 +796,7 @@
         "idUno": "609growingoro",
         "idDos": "id609growingoro",
         "categoria": "dama",
-        "estilo": "sandalia",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "45.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/dama/growing/609growingplata.webp", "color": "Plata","idUno":"609growingplata","idDos":"id609growingplata","categoria":"dama"},
           {"id": "45.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/dama/growing/609growingnegro.webp", "color": "Negro","idUno":"609growingnegro","idDos":"id609growingnegro","categoria":"dama"}
@@ -771,7 +814,7 @@
         "idUno": "324sirissuela",
         "idDos": "id324sirissuela",
         "categoria": "dama",
-        "estilo": "sandalia",
+        "estilo": "Sandalia",
         "otrosColores": [
           {"id": "46.1", "nInicio": 35, "nFinal": 41, "imagen": "img/productos/dama/siris/324sirisnegro.webp", "color": "Negro","idUno":"324sirisnegro","idDos":"id324sirisnegro","categoria":"dama"}
            ]
@@ -789,7 +832,7 @@
         "idUno": "duero100savagenegro",
         "idDos": "idduero100savagenegro",
         "categoria": "dama",
-        "estilo": "sandalia"
+        "estilo": "Sandalia"
       },
       {
         "id": "48",
@@ -803,7 +846,7 @@
         "idUno": "reno18savagenegro",
         "idDos": "idreno18savagenegro",
         "categoria": "dama",
-        "estilo": "sandalia"
+        "estilo": "Sandalia"
       },
       {
         "id": "49",
@@ -817,7 +860,7 @@
         "idUno": "reno20savagenegro",
         "idDos": "idreno20savagenegro",
         "categoria": "dama",
-        "estilo": "sandalia"
+        "estilo": "Sandalia"
       },
       {
         "id": "50",
@@ -831,11 +874,10 @@
         "idUno": "pianasavageblanco",
         "idDos": "idpianasavageblanco",
         "categoria": "dama",
-        "estilo": "sandalia",
+        "estilo": "Ojotas",
         "otrosColores": [
           {"id": "50.1", "nInicio": 36, "nFinal": 40, "imagen": "img/productos/dama/savage/pianasavagenegro.webp", "color": "Negro","idUno":"pianasavageblanco","idDos":"idpianasavageblanco","categoria":"dama"}
-          
            ]
-      }  
+      }
       
 ]
