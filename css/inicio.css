@@ -21,7 +21,7 @@
 }
 .asideIzquierdo, .asideDerecho {
     width: 22%;
-    height: 100vh;
+    height: auto;
     border: 1px solid grey; 
     flex-direction: column;
 }
@@ -59,16 +59,17 @@
     color:brown;
     transform:translate(15px)
 }
-.contenedorEstilos {
+.contenedorEstilos, .contenedorMateriales {
     width: 100%;
     text-align:center;
 }
-#menuPorEstilo {
+#menuPorEstilo, #menuPorMateriales {
     width: 90%;
     font-family: 'Amatic SC', cursive;
     font-size: 19px;
     letter-spacing: 5px;
 }
+
 .itemImagen {
     width: 50%;
     height: 300px;    
