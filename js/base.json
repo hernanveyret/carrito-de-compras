@@ -974,7 +974,7 @@
         "nFinal": 44,
         "marca": "Cromic",
         "precio": 3600,
-        "imagen": "img/productos/dama/Cromic/2140cromicazul.webp",
+        "imagen": "img/productos/dama/cromic/2140cromicazul.webp",
         "color": "Azul",
         "idUno": "2140cromicazul",
         "idDos": "id2140cromicazul",
@@ -982,8 +982,8 @@
         "estilo": "Sandalia",
         "material":"Goma",
         "otrosColores": [
-          {"id": "53.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/dama/Cromic/2140cromicrosa.webp", "color": "Rosa","idUno":"2140cromicrosa","idDos":"id2140cromicrosa","categoria":"dama"},
-          {"id": "53.1", "nInicio": 35, "nFinal": 44, "imagen": "img/productos/dama/Cromic/2140cromicnegro.webp", "color": "Negro","idUno":"2140cromicnegro","idDos":"id2140cromicnegro","categoria":"unisex"}
+          {"id": "53.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/dama/cromic/2140cromicrosa.webp", "color": "Rosa","idUno":"2140cromicrosa","idDos":"id2140cromicrosa","categoria":"dama"},
+          {"id": "53.1", "nInicio": 35, "nFinal": 44, "imagen": "img/productos/dama/cromic/2140cromicnegro.webp", "color": "Negro","idUno":"2140cromicnegro","idDos":"id2140cromicnegro","categoria":"unisex"}
            ]
       },
       {
