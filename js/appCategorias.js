@@ -40,6 +40,7 @@ const productosMarca = [];
 let categoria = localStorage.getItem('miCategoria');   // tomo la marca que se elijio del localStorage
 let seleccionPor = localStorage.getItem('seleccionPor');
 let estilos = localStorage.getItem('miEstilo');
+let material = localStorage.getItem('miMaterial');
 
 
 // tomar informacion de Json.
@@ -49,8 +50,10 @@ fetch('js/base.json').then(response =>{
 
   if (seleccionPor === 'categoria') {
     seleccionPorCategoria()
-  } else { 
+  } else if ( seleccionPor === 'estilo'){ 
     seleccionPorEstilo()
+  } else { 
+    seleccionPorMaterial()
   }
 
         function seleccionPorCategoria() { 
@@ -76,13 +79,21 @@ fetch('js/base.json').then(response =>{
       
         }
         // Seleccion por estilo de producto
-        function seleccionPorEstilo() {
-         console.log(estilos)
+        function seleccionPorEstilo() {         
          for( let i in articulos) {
               if ( estilos === articulos[i].estilo) {
                 mostrarCards(i)
               }
          }
+        }
+
+        function seleccionPorMaterial() {
+          for( let i in articulos) {
+            if ( material === articulos[i].material) {
+              mostrarCards(i)
+            }
+       }
+
         }
   
 

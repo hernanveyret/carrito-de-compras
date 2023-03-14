@@ -1,5 +1,6 @@
 const productosMenu = [];
 const productosEstilo = [];
+const productosMateriales = [];
 
 // tomar informacion de Json.
 fetch('js/base.json').then(response =>{ 
@@ -8,6 +9,7 @@ fetch('js/base.json').then(response =>{
         for ( let i in articulos) {                 // recorro el array de articulos
           productosMenu.push(articulos[i].marca);   // ingreso cada marca al array productosMenu
           productosEstilo.push(articulos[i].estilo);   // ingreso cada estilo al array productosEstilo
+          productosMateriales.push(articulos[i].material);
             for ( let pm in productosMenu) {        // recorro el array productosMenu
               if (productosMenu[pm - 1] == articulos[i].marca) {  // si el valor anterio es igual al nuevo valor
                 productosMenu.pop()                                // borra el ultimo valor por ser igual al anterior.
@@ -19,11 +21,19 @@ fetch('js/base.json').then(response =>{
                 productosEstilo.pop()
               }
             }
-            
+
+                // Creo arrar de materiales 
+                for (let pMa in productosMateriales) {
+                  if ( productosMateriales[pMa - 1] == articulos[i].material) {
+                    productosMateriales.pop()
+                  }
+                }
         }        
         
         productosMenu.sort()    // Acomoda alfabeticamente el array
         productosEstilo.sort()
+        productosMateriales.sort()
+        
         
             // terminado de crear el array de las marcas, creo el template del menu de marcas
         let html = '';
@@ -46,6 +56,17 @@ fetch('js/base.json').then(response =>{
                       }
             htmlE += `</select>`;
             menuEstilos.innerHTML = htmlE;
+
+            // Menu de materiales
+        let htmlM = '';
+            htmlM += `<h3 class="hMarcas">MATERIALES</h3>`;
+            htmlM += `<select id="menuPorMateriales" onchange="materialesMenu()">`;
+                  htmlM += `<option  style="text-align: center">TU ELECCION</option>`;    
+                  for( let i = 0; i < productosMateriales.length; i++) {
+                        htmlM += `<option value="${productosMateriales[i]}" style="text-align: center">${productosMateriales[i]}</option>`;
+                      }
+            htmlM += `</select>`;
+            menuMateriales.innerHTML = htmlM;
 
       }) 
 
@@ -81,4 +102,12 @@ function estiloMenu() {
   localStorage.setItem('miEstilo', miEstiloSeleccion);
   localStorage.setItem('seleccionPor','estilo');
   location.href="carritoPorCategoria.html";
+}
+// Selector menu por material
+function materialesMenu() {
+  let miMaterialSeleccion = document.getElementById('menuPorMateriales').value;
+  localStorage.setItem('miMaterial', miMaterialSeleccion);
+  localStorage.setItem('seleccionPor','material');
+  location.href="carritoPorCategoria.html";
+  
 }
