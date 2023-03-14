@@ -1,0 +1,299 @@
+[
+      {
+      "id":1,
+      "articulo":320,
+      "nInicio":34,
+      "nFinal":47,
+      "marca":"Jaguar",
+      "precio":3500,
+      "imagen":"img/productos/jaguar/320/320-black.png",
+      "color": "Black",
+      "idUno": "320black",
+      "idDos": "id320black",
+      "categoria": "unisex",
+      "otrosColores": [
+        {"id": "1.1", "nInicio": 34, "nFinal": 47, "imagen": "img/productos/jaguar/320/320-blanca.png", "color": "Blanco","idUno":"320blanco","idDos":"id320blanco"},
+        {"id": "1.2", "nInicio": 34, "nFinal": 47, "imagen": "img/productos/jaguar/320/320-jean.png", "color": "Jean","idUno":"320jean","idDos":"id320jean"},
+        {"id": "1.3", "nInicio": 34, "nFinal": 47, "imagen": "img/productos/jaguar/320/320-negro.png", "color": "Negro","idUno":"320negro","idDos":"id320negro"},
+        {"id": "1.4", "nInicio": 34, "nFinal": 47, "imagen": "img/productos/jaguar/320/320-rojo.png", "color": "Rojo","idUno":"320rojo","idDos":"id320rojo"}
+      ]
+    },
+    {
+      "id": 2,
+      "articulo": 128,
+      "nInicio": 19,
+      "nFinal": 26,
+      "marca": "Jaguar",
+      "precio": 1900,
+      "imagen": "img/productos/niños/jaguar/128/128-rosa.webp",
+      "color": "Rosa",
+      "idUno": "128/1rosa",
+      "idDos": "id1281rosa",
+      "categoria": "niños",
+      "otrosColores": [
+        {"id": "2.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-jean.webp", "color": "Jean","idUno":"128/1jean","idDos":"id1281jean","categoria":"niños"},
+        {"id": "2.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-black.webp", "color": "Black","idUno":"128/1black","idDos":"id1281black","categoria":"niños"},
+        {"id": "2.3", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-azul.webp", "color": "Azul","idUno":"128/1azul","idDos":"id1281azul","categoria":"niños"},
+        {"id": "2.4", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jaguar/128/128-rojo.webp", "color": "Rojo","idUno":"128/1rojo","idDos":"id1281rojo","categoria":"niños"}
+         ]
+    },
+    {
+      "id": 3,
+      "articulo": 650,
+      "nInicio": 20,
+      "nFinal": 26,
+      "marca": "Tres",
+      "precio": 2500,
+      "imagen": "img/productos/tres/650azultres.png",
+      "color": "Azul",
+      "idUno": "650azul",
+      "idDos": "id650azul",
+      "categoria": "niños",
+      "otrosColores": [
+        {"id": "3.1", "nInicio": 20, "nFinal": 26, "imagen": "img/productos/tres/650violetatres.png", "color": "Violeta","idUno":"650violeta","idDos":"id650violeta","categoria": "niños"}
+      ]
+    },
+    {
+      "id": 4,
+      "articulo": 1153,
+      "nInicio": 19,
+      "nFinal": 26,
+      "marca": "Tridy",
+      "precio": 2500,
+      "imagen": "img/productos/tridy/1153-blanca.png",
+      "color": "Blanco",
+      "idUno": "1153blanca",
+      "idDos": "id1153blanca",
+      "categoria": "niños",
+      "otrosColores": [
+        {"id": "4.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/tridy/1153-negro.png", "color": "Negro","idUno":"1153negro","idDos":"id1153negro","categoria": "niños"}
+      ]
+    },
+    {
+      "id": 5,
+      "articulo": 4077,
+      "nInicio": 35,
+      "nFinal": 44,
+      "marca": "Shadow",
+      "precio": 4900,
+      "imagen": "img/productos/4077.png",
+      "color": "Nagro/Marron",
+      "idUno": "4077negromarron",
+      "idDos": "id4077negromarron",
+      "categoria": "unisex"
+     },
+     {
+      "id": 6,
+      "articulo": "EXTREME 01",
+      "nInicio":  39,
+      "nFinal": 45,
+      "marca": "Ringo",
+      "precio": 15900,
+      "imagen": "img/productos/extreme01-negra.png",
+      "color": "Negro",
+      "idUno": "extreme01negra",
+      "idDos": "idextreme01negra",
+      "categoria": "hombre"
+    },
+    {
+      "id": 7,
+      "articulo": 609,
+      "nInicio": 35,
+      "nFinal": 40,
+      "marca": "Growing",
+      "precio": 5400,
+      "imagen": "img/productos/growing/609platagrowing.png",
+      "color": "Plata",
+      "idUno": "609plata",
+      "idDos": "id609plata",
+      "categoria": "dama",
+      "otrosColores": [
+        {"id": "7.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/growing/609orogrowing.png", "color": "Oro","idUno":"609oro","idDos":"id609oro","categoria": "dama"},
+        {"id": "7.2", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/growing/609negrogrowing.png", "color": "Negro","idUno":"609negro","idDos":"id609negro","categoria": "dama"}
+      ]
+    },
+    {
+      "id": 8,
+      "articulo": 286,
+      "nInicio": 35,
+      "nFinal": 41,
+      "marca": "Arana",
+      "precio": 9800,
+      "imagen": "img/productos/286-suela.png",
+      "color": "Suela",
+      "idUno": "286suela",
+      "idDos": "id286suela",
+      "categoria": "dama"
+    },
+    {
+      "id": 9,
+      "articulo": "LR-16",
+      "nInicio": 35,
+      "nFinal": 40,
+      "marca": "Savage",
+      "precio": 7400,
+      "imagen": "img/productos/savage/lr26blanco.png",
+      "color": "Blanco",
+      "idUno": "lr16blanco",
+      "idDos": "idlr16blanco",
+      "categoria": "dama",
+      "otrosColores": [
+        {"id": "9.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/savage/lr16negro.png", "color": "Negro","idUn":"lr16negro","idDos":"idlr16negro","categoria": "dama"}
+      ]
+    },
+    {
+      "id": 10,
+      "articulo": 1778,
+      "nInicio": 35,
+      "nFinal": 40,
+      "marca": "Airness",
+      "precio": 8700,
+      "imagen": "img/productos/1778-multicolor.png",
+      "color": "Multicolor",
+      "idUno": "1778multicolor",
+      "idDos": "id1778multicolor",
+      "categoria": "dama"
+    },
+    {
+      "id": 11,
+      "articulo": "P1",
+      "nInicio": 19,
+      "nFinal": 26,
+      "marca": "Jamaiquina",
+      "precio": 2100,
+      "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp",
+      "color": "Azul",
+      "idUno": "p1/1azul",
+      "idDos": "idp11azul",
+      "categoria": "niños",
+      "otrosColores": [
+        {"id": "11.1", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp", "color": "Fuxia","idUno":"p1/1fuxia","idDos":"idp11fuxia"},
+        {"id": "11.2", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p1/1negro","idDos":"idp1/1negro"},
+        {"id": "11.3", "nInicio": 19, "nFinal": 26, "imagen": "img/productos/niños/jamaiquina/p1rosajamaiquina.webp", "color": "Rosa","idUno":"p1/1rosa","idDos":"idp1/1rosa"}
+      ]
+    },
+    {
+      "id": 12,
+      "articulo": "P2",
+      "nInicio": 27,
+      "nFinal": 34,
+      "marca": "Jamaiquina",
+      "precio": 2600,
+      "imagen": "img/productos/niños/jamaiquina/p1fuxiajamaiquina.webp",
+      "color": "Fuxia",
+      "idUno": "p2fuxia",
+      "idDos": "idp2fuxia",
+      "categoria": "niños",
+      "otrosColores": [
+        {"id": "12.1", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1azuljamaiquina.webp", "color": "Azul","idUno":"p1azul","idDos":"idp2azul"},
+        {"id": "12.2", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1negrojamaiquina.webp", "color": "Negro","idUno":"p1negro","idDos":"idp2negro"},
+        {"id": "12.3", "nInicio": 27, "nFinal": 34, "imagen": "img/productos/niños/jamaiquina/p1rosajamaiquina.webp", "color": "Rosa","idUno":"p1rosa","idDos":"idp2rosa"}
+      ]
+    },
+    {
+      "id": 13,
+      "articulo": 2010,
+      "nInicio": 35,
+      "nFinal": 40,
+      "marca": "Cromic",
+      "precio": 2100,
+      "imagen": "img/productos/cromic/2010-rosa.webp",
+      "color": "Rosa",
+      "idUno": "2010/2rosa",
+      "idDos": "id20102rosa",
+      "categoria": "dama",
+      "otrosColores": [
+        {"id": "13.1", "nInicio": 35, "nFinal": 44, "imagen": "img/productos/cromic/2010-negro.webp", "color": "Negro","idUno":"2010negro","idDos":"id2010negro","categoria": "unisex"}
+      ]
+    },
+    {
+      "id": 14,
+      "articulo": 25463,
+      "nInicio":35,
+      "nFinal":41,
+      "marca":"Ipanema",
+      "precio": 2800,
+      "imagen":"img/productos/25463ipanemaAzFx.png",
+      "color": "Azul/Fuxcia",
+      "idUno": "25463ipanemaAzFx",
+      "idDos": "id25463ipanemaAzFx",
+      "categoria": "dama"
+    },
+    {
+      "id": 15,
+      "articulo": 26525,
+      "nInicio":35,
+      "nFinal":41,
+      "marca":"Ipanema",
+      "precio": 2800,
+      "imagen":"img/productos/26525IpanemaARo.png",
+      "color": "Azul/Rosa",
+      "idUno": "26525IpanemaARosa",
+      "idDos": "id26525IpanemaARosa",
+      "categoria": "dama"
+    },
+    {
+    "id": 16,
+    "articulo": 404,
+    "nInicio":39,
+    "nFinal":46,
+    "marca":"Donkey",
+    "precio": 3700,
+    "imagen":"img/productos/Donkey/404Donkeyaz.png",
+    "color": "Azul",
+    "idUno": "404Donkeyaz",
+    "idDos": "id404Donkeyaz",
+    "categoria": "hombre",
+    "otrosColores": [
+      {"id": "16.1", "nInicio": 39, "nFinal": 45, "imagen": "img/productos/Donkey/404Donkeyne.png", "color": "Negro","idUno":"404negro","idDos":"id404negro","categoria": "hombre"}
+    ]
+  },
+  {
+    "id": 17,
+    "articulo": 6700,
+    "nInicio": 35,
+    "nFinal": 40,
+    "marca": "Proforce",
+    "precio": 4500,
+    "imagen": "img/productos/proforce/6700negroproforce.png",
+    "color": "Negro",
+    "idUno": "6700negro",
+    "idDos": "id6700negro",
+    "categoria": "dama",
+    "otrosColores": [
+      {"id": "17.1", "nInicio": 35, "nFinal": 40, "imagen": "img/productos/proforce/6700azulproforce.png", "color": "Azul","idUno":"6700azul","idDos":"id6700azul"}
+    ]
+  },
+  {
+    "id": 18,
+    "articulo": 1023,
+    "nInicio": 35,
+    "nFinal": 44,
+    "marca": "Action Team",
+    "precio": 4500,
+    "imagen": "img/productos/action/1023negroaction.webp",
+    "color": "Negro",
+    "idUno": "1023negro",
+    "idDos": "id1023negro",
+    "categoria": "hombre",
+    "otrosColores": [
+      {"id": "18.1", "nInicio": 35, "nFinal": 44, "imagen": "img/productos/action/1023azulaction.webp", "color": "Azul","idUno":"1023azul","idDos":"id1023azul","categoria": "hombre"}
+    ]
+  },
+  {
+    "id": 19,
+    "articulo": 124,
+    "nInicio": 18,
+    "nFinal": 29,
+    "marca": "Hey Day",
+    "precio": 2700,
+    "imagen": "img/productos/niños/heyday/124HeydayBanco.webp",
+    "color": "Blanco",
+    "idUno": "124Blanco",
+    "idDos": "id124Blanco",
+    "categoria": "niños",
+    "otrosColores": [
+      {"id": "19.1", "nInicio": 18, "nFinal": 29, "imagen": "img/productos/niños/heyday/124heydaycoral.webp", "color": "Coral","idUno":"124coral","idDos":"id124coral"}
+    ]
+  }
+]
