@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/estiloCarrito.css" />
+    <link rel="stylesheet" href="css/estiloFormulario.css" />
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <div class="headerIzquerdo">
+            <img src="img/imagenes/menuico.png" alt="Icono de menu" class="iconoMenu"  />
+            <nav class="menuNav">
+                <ul>
+                    <li class="inicio"><a href="index.html" class="navegador">INICIO</a></li>
+                    <li class="catalogo"><a href="catalogo.html" class="navegador">CATALOGO</a></li>
+                    <li class="producto"><a href="carrito.html" class="navegador">PRODUCTOS</a></li>
+                    <li class="informacion"><a href="formulario.html" class="navegador">INFORMACION</a></li>
+                    <li class="contactenos"><a href="formulario.html" class="navegador">CONTACTENOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerCentral">
+            <h1 class="tituloPrincipal">CALZADOS ABI</h1>         
+        </div>
+        <div class="headerDerecho">
+            
+            <img src="img/imagenes/bolsa.png" alt="Bolsita de compras" class="iconoBolsita" onclick="mostrarCarrito()"/>
+            <p id="cantidadProductos">0</p>
+        </div>
+    </header>
+
+    <main class="contenedor"> 
+           <div class="banner">
+                <div class="cuadro">
+                    <div class="info">
+                        <div id="llamanos">
+                            <div class="textoInfo">
+                                <p class="tituloInfo" id="llama">-LLAMANOS</p>
+                                <P>(011)-34025499</P>
+                            </div>
+                        </div>
+
+                        <div id="ubicaciones">
+                            <div class="textoInfo">
+                                <P class="tituloInfo" id="ubi">-UBICACION</P>
+                                <p>Calle America 617 - Barrio Guena - San nicolas De los Arroyos - Buenos Aires</p>
+                            </div>
+                        </div>
+                        <div id="horario">
+                            <div class="textoInfo">
+                                <p class="tituloInfo"id="hora" >-HORARIO DE ATENCION</p>
+                                <p>Lunes a Sabados de 9am a 21hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="formulario" action="formulario.php" method="post" >
+                        <p class="tituloFormulario">CONTACTENOS</p>
+                        <input type="text" name="nombre" placeholder="Nombre" />
+                        <input type="text" name="apellido" placeholder="Apellido" />
+                        <input type="mail" name="correo" placeholder="Correo" />
+                        <textarea name="msj" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="ENVIAR" class="btnFormulario" />
+                    </form>
+                </div>
+           </div>
+        
+    </main>
+   
+    <footer>
+
+    </footer> 
+    <section id="carritoContenedor" class="carrito-Contenedor"> 
+        <!--ACA APARECE LO QUE SE COMPRO O CARTEL DE CONFIRMACION DE QUE SE COMPRO ALGO--> 
+     </section>
+
+     <a href="" class="whatsapp">whatsapp</a>
+
+     <script src="js/appBolsitaCarrito.js" type="text/javascript"></script>
+    
+</body>
+</html>
