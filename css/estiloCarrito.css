@@ -1,0 +1,111 @@
+.carrito-Contenedor {
+    width: 95%;
+    height: 100vh;
+    background-color: rgba(138, 141, 141, 0.479);      
+    position: fixed;
+    top: 85px;
+    box-shadow: 2px 2px 5px black;  
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+.carrito-cuadro {
+    background-color: rgb(211, 211, 228);
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px black;
+}
+
+.titulos-carrito {
+    display: flex;
+}
+.titulos-carrito div {
+    width: 100px;
+    border: 1px solid white;
+    text-align:center;
+    font-weight: bold;
+}
+.mostrarResultado {
+    display: flex;
+    
+    
+}
+.mostrarResultado div {
+    width: 100px;
+    height: 35px;
+    border-bottom:  1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-contenedor-carrito {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+.btn-mas, .btn-menos {
+    background-color:aqua;
+    color: black;
+    width: 28px;
+    height: 30px;
+    margin-right: 5px;
+}
+.btn-pagar {
+    background-color: green;
+}
+.btn-borrar-producto {
+    font-size: 0;
+    background-color: red;
+    color: white;
+    background-image: url('../img/imagenes/bote-de-basura.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    padding: 15px 14px;
+}
+.btn-contenedor-carrito button {
+    margin-right: 2px;    
+}
+
+@media (max-width: 800px) {
+    .carrito-Contenedor {
+        width: 95%;
+    }
+    .carrito-cuadro {
+        width: 100%;
+    }
+    /*
+    table {
+        width: auto;
+    }
+    */
+    button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carrito-Contenedor {
+        width: 90%;
+    }
+    .carrito-cuadro {
+        width: 100%;
+    }
+    /*
+    table {
+        width:90%;
+    }
+    */
+    button {
+        font-size: 10px;
+    }
+}

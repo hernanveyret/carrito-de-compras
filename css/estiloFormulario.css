@@ -1,0 +1,92 @@
+.banner {
+    width: 100%;
+    height: 70vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro {
+    width: 90%;
+    height: 80%;
+    background-color: brown;
+    position: relative;
+}
+.info {
+    width: auto;
+    height:95%;
+    position: absolute;
+    top: 9px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;    
+}
+.textoInfo {
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 10px;
+}
+.tituloInfo {
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;  
+}
+#llamanos, #ubicaciones, #horario {
+    display: flex;
+}
+#llama::before {
+    content: url(../img/ico/bn/icoTelefono20.png);  
+}
+#ubi::before {
+    content: url(../img/ico/bn/icoUbicacion20.png)
+}
+#hora::before {
+    content: url(../img/ico/bn/icoReloj20.png)
+}
+.formulario {
+    width:40%;
+    height: 115%;
+    background-color:rgb(233, 233, 243);
+    position: absolute;
+    top: -27px;
+    right: 30px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    flex-direction: column;
+}
+.tituloFormulario {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+textarea {
+    width: 90%;
+    height: 8em;
+    margin-top: 10px;
+    border: none;
+}
+.btnFormulario {
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.btnFormulario:hover {
+        background-color: grey;   
+}
+
+@media ( max-width: 570px ) {
+    .formulario {
+        width: 100%;
+        left: 7px;
+    }
+}
